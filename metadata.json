@@ -1,0 +1,6 @@
+{
+  "name": "Couchtryouts - Neon Glam Adult Streaming Theme",
+  "description": "High-end adult streaming tube frontend theme with dark cyber-glam aesthetics, responsive video grids, watch page, and model profile.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
