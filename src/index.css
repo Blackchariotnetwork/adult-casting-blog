@@ -2,76 +2,66 @@
 
 :root {
   /* ============================================================
-     COUCHTRYOUTS DESIGN SYSTEM - BOLD NEON-GLAM PALETTE
+     COUCHTRYOUTS DESIGN SYSTEM - BUBBLY CANDY-NEON PALETTE
      ============================================================ */
   
-  /* Canvas & Structural Backgrounds (Deep Velvet Obsidian) */
-  --ct-bg-base: #07070c;
-  --ct-bg-surface: #0f0f18;
-  --ct-bg-surface-elevated: #161624;
-  --ct-bg-surface-card: #141422;
-  --ct-bg-surface-hover: #1f1f32;
+  /* Canvas & Structural Backgrounds (Rich Velvety Midnight with Magenta Undertones) */
+  --ct-bg-base: #090710;
+  --ct-bg-surface: #130f1f;
+  --ct-bg-surface-elevated: #1a152b;
+  --ct-bg-surface-card: #181226;
+  --ct-bg-surface-hover: #261c3d;
   
-  /* Glassmorphism & Saturated Overlays */
-  --ct-bg-glass: rgba(15, 15, 24, 0.82);
-  --ct-bg-glass-card: rgba(20, 20, 32, 0.75);
-  --ct-bg-glass-card-hover: rgba(28, 24, 42, 0.9);
-  --ct-backdrop-blur: blur(20px);
+  /* Bubbly Gloss & Glassmorphism Surfaces */
+  --ct-bg-glass: rgba(19, 15, 31, 0.88);
+  --ct-bg-glass-card: rgba(26, 19, 41, 0.78);
+  --ct-bg-glass-card-hover: rgba(38, 26, 61, 0.92);
+  --ct-backdrop-blur: blur(24px);
   
-  /* Neon Brand Palettes (Cyber-Glam Hot Pink -> Electric Magenta -> Violet) */
-  --ct-neon-pink: #ff1879;
+  /* Fun Candy-Neon Brand Accents (Bubblegum Pink -> Radiant Magenta -> Electric Violet) */
+  --ct-neon-pink: #ff1475;
   --ct-neon-pink-hover: #ff3b8d;
-  --ct-neon-pink-glow: rgba(255, 24, 121, 0.45);
-  --ct-neon-pink-glow-lg: 0 0 40px rgba(255, 24, 121, 0.65);
+  --ct-neon-pink-glow: rgba(255, 20, 117, 0.55);
+  --ct-neon-pink-glow-lg: 0 0 45px rgba(255, 20, 117, 0.75);
   
+  --ct-candy-bubblegum: #ff2a8d;
+  --ct-candy-peach: #fb7185;
   --ct-neon-magenta: #e11d48;
-  --ct-neon-violet: #8b5cf6;
-  --ct-neon-violet-hover: #a78bfa;
-  --ct-neon-violet-glow: rgba(139, 92, 246, 0.45);
-  --ct-neon-violet-glow-lg: 0 0 40px rgba(139, 92, 246, 0.65);
-  
+  --ct-neon-violet: #9333ea;
+  --ct-neon-purple: #a855f7;
   --ct-neon-cyan: #06b6d4;
-  --ct-neon-gold: #f59e0b;
-  --ct-neon-emerald: #10b981;
+  --ct-candy-gold: #facc15;
+  --ct-candy-lime: #10b981;
   
-  /* Brand Gradient Presets (Bold Glamour) */
-  --ct-gradient-primary: linear-gradient(135deg, #ff1879 0%, #d946ef 50%, #8b5cf6 100%);
-  --ct-gradient-primary-reverse: linear-gradient(135deg, #8b5cf6 0%, #d946ef 50%, #ff1879 100%);
-  --ct-gradient-fire: linear-gradient(135deg, #ff1879 0%, #f43f5e 50%, #fb923c 100%);
-  --ct-gradient-gold: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
-  --ct-gradient-subtle: linear-gradient(180deg, rgba(255, 24, 121, 0.18) 0%, rgba(139, 92, 246, 0.08) 100%);
+  /* Bubbly Gradients (Juicy, High-Energy) */
+  --ct-gradient-candy: linear-gradient(135deg, #ff1475 0%, #ff2a8d 35%, #a855f7 100%);
+  --ct-gradient-bubblegum: linear-gradient(135deg, #ff3399 0%, #ff5277 50%, #f43f5e 100%);
+  --ct-gradient-sunset: linear-gradient(135deg, #ff1475 0%, #ec4899 40%, #8b5cf6 80%, #06b6d4 100%);
+  --ct-gradient-gloss: linear-gradient(180deg, rgba(255, 255, 255, 0.28) 0%, rgba(255, 255, 255, 0.04) 50%, transparent 100%);
+  --ct-gradient-card-border: linear-gradient(135deg, rgba(255, 20, 117, 0.7) 0%, rgba(168, 85, 247, 0.5) 100%);
   
-  /* Foreground & Typography */
+  /* Typography & Foreground */
   --ct-text-primary: #ffffff;
-  --ct-text-secondary: #e2e8f0;
-  --ct-text-muted: #a0aec0;
-  --ct-text-disabled: #4a5568;
+  --ct-text-secondary: #f1f5f9;
+  --ct-text-muted: #cbd5e1;
+  --ct-text-disabled: #64748b;
   
-  /* Hairline Borders & Neon Trims */
-  --ct-border-subtle: rgba(255, 255, 255, 0.1);
-  --ct-border-medium: rgba(255, 255, 255, 0.18);
-  --ct-border-neon: rgba(255, 24, 121, 0.5);
-  --ct-border-neon-strong: #ff1879;
-  --ct-border-glow-focus: rgba(255, 24, 121, 0.8);
-  
-  /* Radii */
-  --ct-radius-sm: 8px;
-  --ct-radius-md: 12px;
-  --ct-radius-lg: 18px;
-  --ct-radius-xl: 26px;
+  /* Plump Bubbly Radii (Super-Curved & Rounded) */
+  --ct-radius-sm: 12px;
+  --ct-radius-md: 18px;
+  --ct-radius-lg: 24px;
+  --ct-radius-xl: 32px;
+  --ct-radius-2xl: 42px;
   --ct-radius-full: 9999px;
   
-  /* Animation Timing */
-  --ct-transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
-  --ct-transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
+  /* Springy Bouncy Transitions */
+  --ct-transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
   --ct-transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
   
-  /* Shadows & Neon Illumination */
-  --ct-shadow-sm: 0 4px 16px rgba(0, 0, 0, 0.5);
-  --ct-shadow-card: 0 15px 40px -10px rgba(0, 0, 0, 0.8);
-  --ct-shadow-neon-pink: 0 0 30px rgba(255, 24, 121, 0.45);
-  --ct-shadow-neon-violet: 0 0 30px rgba(139, 92, 246, 0.45);
-  --ct-shadow-ad: 0 10px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 24, 121, 0.35);
+  /* Bubbly Shadows & Glows */
+  --ct-shadow-bubble: 0 16px 36px -8px rgba(0, 0, 0, 0.8), 0 0 25px rgba(255, 20, 117, 0.35);
+  --ct-shadow-candy-pink: 0 10px 30px rgba(255, 20, 117, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.3);
+  --ct-shadow-candy-purple: 0 10px 30px rgba(147, 51, 234, 0.5), inset 0 2px 4px rgba(255, 255, 255, 0.3);
 }
 
 body {
@@ -84,7 +74,7 @@ body {
 
 h1, h2, h3, h4, h5, h6, .ct-display-font {
   font-family: 'Outfit', sans-serif;
-  letter-spacing: -0.02em;
+  letter-spacing: -0.01em;
 }
 
 .ct-tabular {
@@ -92,61 +82,91 @@ h1, h2, h3, h4, h5, h6, .ct-display-font {
   font-family: 'JetBrains Mono', monospace;
 }
 
-/* Custom Scrollbar */
+/* Custom Bubbly Scrollbar */
 ::-webkit-scrollbar {
-  width: 9px;
-  height: 9px;
+  width: 11px;
+  height: 11px;
 }
 ::-webkit-scrollbar-track {
-  background: #07070c;
+  background: #090710;
 }
 ::-webkit-scrollbar-thumb {
-  background: #251633;
-  border-radius: 6px;
-  border: 1px solid rgba(255, 24, 121, 0.2);
+  background: linear-gradient(180deg, #ff1475 0%, #9333ea 100%);
+  border-radius: 9999px;
+  border: 2px solid #090710;
 }
 ::-webkit-scrollbar-thumb:hover {
-  background: var(--ct-neon-pink);
-  box-shadow: 0 0 12px var(--ct-neon-pink);
+  background: #ff2a8d;
+  box-shadow: 0 0 15px #ff1475;
 }
 
-/* Shimmer Animation */
-@keyframes ct-shimmer {
-  0% { background-position: -200% 0; }
-  100% { background-position: 200% 0; }
-}
-
-.ct-shimmer-btn {
-  background-size: 200% auto;
-  animation: ct-shimmer 3s linear infinite;
-}
-
-/* Ambient Floating Particles */
-@keyframes ct-float-slow {
+/* Bubbly Animations */
+@keyframes ct-bubble-float {
   0%, 100% {
-    transform: translateY(0px) rotate(0deg) scale(1);
+    transform: translateY(0px) scale(1) rotate(0deg);
+  }
+  33% {
+    transform: translateY(-14px) scale(1.04) rotate(1.5deg);
+  }
+  66% {
+    transform: translateY(-6px) scale(0.98) rotate(-1.5deg);
+  }
+}
+
+.ct-bubble-float {
+  animation: ct-bubble-float 6s ease-in-out infinite;
+}
+
+@keyframes ct-pulse-glow {
+  0%, 100% {
+    filter: drop-shadow(0 0 18px rgba(255, 20, 117, 0.6)) drop-shadow(0 0 35px rgba(168, 85, 247, 0.4));
+    transform: scale(1);
   }
   50% {
-    transform: translateY(-18px) rotate(3deg) scale(1.05);
+    filter: drop-shadow(0 0 30px rgba(255, 20, 117, 0.95)) drop-shadow(0 0 55px rgba(255, 42, 141, 0.6));
+    transform: scale(1.02);
   }
 }
 
-.ct-float-slow {
-  animation: ct-float-slow 8s ease-in-out infinite;
+.ct-bubble-logo-glow {
+  animation: ct-pulse-glow 3.5s ease-in-out infinite;
 }
 
-/* Neon Pulse Glow */
-@keyframes ct-pulse-neon {
-  0%, 100% {
-    opacity: 0.7;
-    filter: drop-shadow(0 0 15px rgba(255, 24, 121, 0.5));
-  }
-  50% {
-    opacity: 1;
-    filter: drop-shadow(0 0 28px rgba(255, 24, 121, 0.9)) drop-shadow(0 0 45px rgba(139, 92, 246, 0.5));
-  }
+/* Juicy Candy Specular Gloss Effect */
+.ct-gloss-sheen {
+  position: relative;
+  overflow: hidden;
+}
+.ct-gloss-sheen::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 48%;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.3) 0%, rgba(255, 255, 255, 0.05) 70%, transparent 100%);
+  border-radius: inherit;
+  pointer-events: none;
 }
 
-.ct-logo-glow {
-  animation: ct-pulse-neon 4s ease-in-out infinite;
+/* Plump Bubbly Button */
+.ct-bubble-btn {
+  border-radius: var(--ct-radius-full);
+  transition: transform var(--ct-transition-spring), box-shadow var(--ct-transition-spring);
+}
+.ct-bubble-btn:hover {
+  transform: translateY(-3px) scale(1.05);
+}
+.ct-bubble-btn:active {
+  transform: translateY(1px) scale(0.96);
+}
+
+/* Plump Bubbly Card */
+.ct-bubbly-card {
+  border-radius: var(--ct-radius-xl);
+  transition: transform var(--ct-transition-spring), border-color var(--ct-transition-spring), box-shadow var(--ct-transition-spring);
+}
+.ct-bubbly-card:hover {
+  transform: translateY(-8px) scale(1.025);
+  box-shadow: 0 22px 45px -8px rgba(0, 0, 0, 0.9), 0 0 35px rgba(255, 20, 117, 0.4);
 }

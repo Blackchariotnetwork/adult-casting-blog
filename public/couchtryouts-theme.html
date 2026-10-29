@@ -3,103 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Couchtryouts — Neon Glam 18+ Streaming Platform</title>
-  <meta name="description" content="Premium after-dark adult video tube theme with dark aesthetics, neon gradients, glassmorphism cards, and responsive streaming layouts.">
+  <title>Couchtryouts — Fun Bubbly 18+ Streaming Platform</title>
+  <meta name="description" content="Fun, bubbly, high-energy adult streaming theme with candy-neon gradients, plump rounded cards, and glamorous after-dark vibes.">
   
   <!-- Google Fonts: Outfit (Display & Headings) + Plus Jakarta Sans (Body) + JetBrains Mono (Numbers) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
   <style>
     /* ==========================================================================
-       1. CSS CUSTOM PROPERTIES (BOLD NEON GLAM PALETTE)
+       1. CSS CUSTOM PROPERTIES (BUBBLY CANDY-NEON PALETTE)
        ========================================================================== */
     :root {
-      /* Backgrounds & Canvas (Deep Velvet Obsidian) */
-      --ct-bg-base: #07070c;
-      --ct-bg-surface: #0f0f18;
-      --ct-bg-surface-elevated: #161624;
-      --ct-bg-surface-card: #141422;
-      --ct-bg-surface-hover: #1f1f32;
+      /* Backgrounds (Velvet Midnight with Magenta Tones) */
+      --ct-bg-base: #090710;
+      --ct-bg-surface: #130f1f;
+      --ct-bg-surface-elevated: #1a152b;
+      --ct-bg-surface-card: #181226;
+      --ct-bg-surface-hover: #261c3d;
       
       /* Glassmorphism Surfaces */
-      --ct-bg-glass: rgba(15, 15, 24, 0.85);
-      --ct-bg-glass-card: rgba(20, 20, 32, 0.8);
-      --ct-bg-glass-card-hover: rgba(30, 24, 46, 0.95);
-      --ct-backdrop-blur: blur(20px);
+      --ct-bg-glass: rgba(19, 15, 31, 0.9);
+      --ct-bg-glass-card: rgba(24, 18, 38, 0.85);
+      --ct-backdrop-blur: blur(24px);
       
-      /* Neon Brand Accents (Cyber-Glam Hot Pink -> Electric Magenta -> Violet) */
-      --ct-neon-pink: #ff1879;
-      --ct-neon-pink-hover: #ff3b8d;
-      --ct-neon-pink-glow: rgba(255, 24, 121, 0.5);
-      --ct-neon-pink-glow-lg: 0 0 40px rgba(255, 24, 121, 0.7);
-      
-      --ct-neon-magenta: #e11d48;
-      --ct-neon-violet: #8b5cf6;
-      --ct-neon-violet-hover: #a78bfa;
-      --ct-neon-violet-glow: rgba(139, 92, 246, 0.45);
-      --ct-neon-violet-glow-lg: 0 0 40px rgba(139, 92, 246, 0.65);
-      
+      /* Fun Candy-Neon Accents */
+      --ct-neon-pink: #ff1475;
+      --ct-candy-bubblegum: #ff2a8d;
+      --ct-neon-violet: #9333ea;
+      --ct-candy-purple: #a855f7;
       --ct-neon-cyan: #06b6d4;
-      --ct-neon-gold: #f59e0b;
-      --ct-neon-emerald: #10b981;
+      --ct-candy-gold: #facc15;
       
-      /* Gradients */
-      --ct-gradient-primary: linear-gradient(135deg, #ff1879 0%, #d946ef 50%, #8b5cf6 100%);
-      --ct-gradient-primary-reverse: linear-gradient(135deg, #8b5cf6 0%, #d946ef 50%, #ff1879 100%);
-      --ct-gradient-fire: linear-gradient(135deg, #ff1879 0%, #f43f5e 50%, #fb923c 100%);
-      --ct-gradient-glow: linear-gradient(135deg, rgba(255, 24, 121, 0.35) 0%, rgba(139, 92, 246, 0.35) 100%);
-      --ct-gradient-dark-scrim: linear-gradient(180deg, rgba(7, 7, 12, 0) 0%, rgba(7, 7, 12, 0.95) 100%);
+      /* Bubbly Gradients */
+      --ct-gradient-candy: linear-gradient(135deg, #ff1475 0%, #ff2a8d 35%, #a855f7 100%);
+      --ct-gradient-bubblegum: linear-gradient(135deg, #ff3399 0%, #ff5277 50%, #f43f5e 100%);
       
-      /* Typography & Foreground */
+      /* Typography */
       --ct-text-primary: #ffffff;
-      --ct-text-secondary: #e2e8f0;
-      --ct-text-muted: #a0aec0;
-      --ct-text-disabled: #4a5568;
+      --ct-text-secondary: #f1f5f9;
+      --ct-text-muted: #cbd5e1;
       
-      /* Hairlines & Borders */
-      --ct-border-subtle: rgba(255, 255, 255, 0.1);
-      --ct-border-medium: rgba(255, 255, 255, 0.18);
-      --ct-border-neon: rgba(255, 24, 121, 0.5);
-      --ct-border-neon-strong: #ff1879;
-      --ct-border-glow-focus: rgba(255, 24, 121, 0.85);
-      
-      /* Radii */
-      --ct-radius-sm: 8px;
-      --ct-radius-md: 12px;
-      --ct-radius-lg: 18px;
-      --ct-radius-xl: 26px;
+      /* Plump Bubbly Radii */
+      --ct-radius-sm: 12px;
+      --ct-radius-md: 18px;
+      --ct-radius-lg: 26px;
+      --ct-radius-xl: 36px;
       --ct-radius-full: 9999px;
       
-      /* Shadows */
-      --ct-shadow-card: 0 16px 45px -10px rgba(0, 0, 0, 0.85);
-      --ct-shadow-neon: 0 0 30px rgba(255, 24, 121, 0.45);
-      --ct-shadow-ad: 0 10px 40px rgba(0, 0, 0, 0.9), 0 0 25px rgba(255, 24, 121, 0.35);
-      
-      /* Transitions */
-      --ct-transition-fast: 150ms cubic-bezier(0.16, 1, 0.3, 1);
-      --ct-transition-normal: 250ms cubic-bezier(0.16, 1, 0.3, 1);
-      --ct-transition-smooth: 400ms cubic-bezier(0.16, 1, 0.3, 1);
+      /* Bouncy Transitions */
+      --ct-transition-spring: 300ms cubic-bezier(0.34, 1.56, 0.64, 1);
+      --ct-shadow-bubble: 0 18px 45px -8px rgba(0, 0, 0, 0.85), 0 0 35px rgba(255, 20, 117, 0.45);
     }
 
-    /* ==========================================================================
-       2. BASE RESET & ESSENTIAL UTILITIES
-       ========================================================================== */
     *, *::before, *::after {
       box-sizing: border-box;
       margin: 0;
       padding: 0;
     }
 
-    html {
-      scroll-behavior: smooth;
-    }
-
     body {
       background-color: var(--ct-bg-base);
       color: var(--ct-text-primary);
-      font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      font-family: 'Plus Jakarta Sans', system-ui, sans-serif;
       font-size: 15px;
       line-height: 1.5;
       min-height: 100vh;
@@ -107,10 +74,10 @@
       -webkit-font-smoothing: antialiased;
     }
 
-    h1, h2, h3, h4, h5, h6, .ct-heading {
+    h1, h2, h3, h4, h5, h6 {
       font-family: 'Outfit', sans-serif;
-      font-weight: 800;
-      letter-spacing: -0.02em;
+      font-weight: 900;
+      letter-spacing: -0.01em;
       color: var(--ct-text-primary);
     }
 
@@ -119,74 +86,36 @@
       font-variant-numeric: tabular-nums;
     }
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+    a { color: inherit; text-decoration: none; }
+    button { background: none; border: none; font: inherit; cursor: pointer; color: inherit; }
 
-    button {
-      background: none;
-      border: none;
-      font: inherit;
-      cursor: pointer;
-      color: inherit;
-    }
-
-    /* Custom Scrollbar */
-    ::-webkit-scrollbar {
-      width: 9px;
-      height: 9px;
-    }
-    ::-webkit-scrollbar-track {
-      background: var(--ct-bg-base);
-    }
+    /* Custom Bubbly Scrollbar */
+    ::-webkit-scrollbar { width: 11px; }
+    ::-webkit-scrollbar-track { background: #090710; }
     ::-webkit-scrollbar-thumb {
-      background: #251633;
-      border-radius: var(--ct-radius-full);
-      border: 1px solid rgba(255, 24, 121, 0.2);
-    }
-    ::-webkit-scrollbar-thumb:hover {
-      background: var(--ct-neon-pink);
-      box-shadow: 0 0 12px var(--ct-neon-pink);
+      background: linear-gradient(180deg, #ff1475 0%, #9333ea 100%);
+      border-radius: 9999px;
+      border: 2px solid #090710;
     }
 
-    /* Ambient Background Glow Spots */
-    .ct-ambient-glow-wrapper {
+    /* Ambient Floating Bubble Glows */
+    .ct-ambient-glow {
       position: fixed;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      overflow: hidden;
+      inset: 0;
       pointer-events: none;
+      overflow: hidden;
       z-index: 0;
     }
-    .ct-glow-orb {
+    .ct-bubble-orb {
       position: absolute;
       border-radius: 50%;
       filter: blur(140px);
       opacity: 0.25;
-      animation: ct-float 10s ease-in-out infinite alternate;
+      animation: ct-bob 8s ease-in-out infinite alternate;
     }
-    .ct-glow-orb-pink {
-      width: 650px;
-      height: 650px;
-      background: var(--ct-neon-pink);
-      top: -200px;
-      right: 15%;
-    }
-    .ct-glow-orb-violet {
-      width: 580px;
-      height: 580px;
-      background: var(--ct-neon-violet);
-      bottom: 10%;
-      left: -120px;
-      animation-delay: -5s;
-    }
-
-    @keyframes ct-float {
+    @keyframes ct-bob {
       0% { transform: translateY(0px) scale(1); }
-      100% { transform: translateY(40px) scale(1.1); }
+      100% { transform: translateY(35px) scale(1.08); }
     }
 
     .ct-container {
@@ -197,79 +126,88 @@
       z-index: 1;
     }
 
-    /* View Switcher Top Bar Demo Control */
+    /* Plump Bubbly Button */
+    .ct-bubble-btn {
+      border-radius: var(--ct-radius-full);
+      transition: transform var(--ct-transition-spring), box-shadow var(--ct-transition-spring);
+    }
+    .ct-bubble-btn:hover {
+      transform: translateY(-3px) scale(1.05);
+    }
+    .ct-bubble-btn:active {
+      transform: translateY(1px) scale(0.96);
+    }
+
+    /* Plump Bubbly Card */
+    .ct-bubbly-card {
+      border-radius: var(--ct-radius-xl);
+      transition: transform var(--ct-transition-spring), border-color var(--ct-transition-spring), box-shadow var(--ct-transition-spring);
+    }
+    .ct-bubbly-card:hover {
+      transform: translateY(-8px) scale(1.025);
+      box-shadow: var(--ct-shadow-bubble);
+      border-color: var(--ct-neon-pink);
+    }
+
+    /* Demo View Switcher Bar */
     .ct-demo-bar {
-      background: #0d0d15;
-      border-bottom: 1px solid rgba(255, 24, 121, 0.3);
+      background: #120d1e;
+      border-bottom: 2px solid rgba(255, 20, 117, 0.4);
       padding: 0.65rem 1.5rem;
-      font-size: 0.8rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
       position: sticky;
       top: 0;
       z-index: 100;
-      box-shadow: 0 4px 20px rgba(0,0,0,0.8);
-    }
-    .ct-demo-tabs {
-      display: flex;
-      gap: 0.5rem;
-      align-items: center;
+      font-size: 0.8rem;
     }
     .ct-demo-tab-btn {
-      padding: 0.4rem 1rem;
-      border-radius: var(--ct-radius-md);
-      font-size: 0.78rem;
-      font-weight: 800;
+      padding: 0.45rem 1.1rem;
+      border-radius: var(--ct-radius-full);
+      font-size: 0.8rem;
+      font-weight: 900;
       color: var(--ct-text-muted);
-      border: 1px solid var(--ct-border-subtle);
-      transition: var(--ct-transition-fast);
+      border: 2px solid rgba(255, 20, 117, 0.3);
+      transition: all var(--ct-transition-spring);
     }
     .ct-demo-tab-btn.active, .ct-demo-tab-btn:hover {
       color: #fff;
-      background: var(--ct-gradient-primary);
+      background: var(--ct-gradient-candy);
       border-color: transparent;
-      box-shadow: 0 0 18px rgba(255, 24, 121, 0.5);
+      box-shadow: 0 0 20px rgba(255, 20, 117, 0.6);
+      transform: scale(1.05);
     }
 
-    /* ==========================================================================
-       3. COMPONENT: HEADER & NAVIGATION
-       ========================================================================== */
+    /* HEADER */
     .ct-header {
       background: var(--ct-bg-glass);
       backdrop-filter: var(--ct-backdrop-blur);
-      border-bottom: 1px solid rgba(255, 24, 121, 0.25);
+      border-bottom: 2px solid rgba(255, 20, 117, 0.35);
       position: sticky;
-      top: 42px;
+      top: 45px;
       z-index: 90;
-      box-shadow: 0 10px 35px rgba(0,0,0,0.8);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.85);
     }
     .ct-header-inner {
       display: flex;
       align-items: center;
       justify-content: space-between;
       gap: 1.5rem;
-      height: 80px;
-    }
-    .ct-brand {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      flex-shrink: 0;
+      height: 85px;
     }
     .ct-brand-logo {
-      height: 54px;
+      height: 60px;
       width: auto;
       object-fit: contain;
-      filter: drop-shadow(0 0 16px rgba(255, 24, 121, 0.75)) drop-shadow(0 0 30px rgba(139, 92, 246, 0.4));
-      transition: transform var(--ct-transition-normal), filter var(--ct-transition-normal);
+      filter: drop-shadow(0 0 20px rgba(255, 20, 117, 0.8)) drop-shadow(0 0 40px rgba(168, 85, 247, 0.5));
+      transition: transform var(--ct-transition-spring);
     }
-    .ct-brand:hover .ct-brand-logo {
-      transform: scale(1.05);
-      filter: drop-shadow(0 0 25px rgba(255, 24, 121, 0.95)) drop-shadow(0 0 45px rgba(139, 92, 246, 0.6));
+    .ct-brand-logo:hover {
+      transform: scale(1.08);
     }
-    
-    /* Search Bar with Glow Focus State */
+
+    /* Plump Search Bar */
     .ct-search-box {
       flex: 1;
       max-width: 580px;
@@ -277,1713 +215,416 @@
     }
     .ct-search-input {
       width: 100%;
-      background: #161624;
-      border: 1px solid rgba(255, 24, 121, 0.35);
+      background: #1a142c;
+      border: 2px solid rgba(255, 20, 117, 0.45);
       border-radius: var(--ct-radius-full);
-      padding: 0.75rem 3.5rem 0.75rem 3rem;
+      padding: 0.85rem 3.5rem 0.85rem 3.2rem;
       color: #fff;
-      font-size: 0.9rem;
-      transition: all var(--ct-transition-normal);
+      font-size: 0.95rem;
+      font-weight: 600;
       outline: none;
-      box-shadow: inset 0 2px 4px rgba(0,0,0,0.6);
-    }
-    .ct-search-input::placeholder {
-      color: #718096;
+      transition: all 0.3s;
     }
     .ct-search-input:focus {
-      background: #1a1a2c;
+      background: #23193c;
       border-color: var(--ct-neon-pink);
-      box-shadow: 0 0 0 2px rgba(255, 24, 121, 0.4), 0 0 30px rgba(255, 24, 121, 0.5);
+      box-shadow: 0 0 0 3px rgba(255, 20, 117, 0.35), 0 0 30px rgba(255, 20, 117, 0.5);
     }
     .ct-search-icon {
       position: absolute;
-      left: 1.1rem;
+      left: 1.25rem;
       top: 50%;
       transform: translateY(-50%);
       color: var(--ct-neon-pink);
       pointer-events: none;
-      width: 18px;
-      height: 18px;
-    }
-    .ct-search-shortcut {
-      position: absolute;
-      right: 1rem;
-      top: 50%;
-      transform: translateY(-50%);
-      background: rgba(255, 24, 121, 0.2);
-      border: 1px solid rgba(255, 24, 121, 0.4);
-      border-radius: 4px;
-      font-size: 0.7rem;
-      padding: 2px 6px;
-      color: var(--ct-neon-pink);
-      font-weight: 800;
     }
 
-    /* Nav Links */
+    /* Plump Nav Pills */
     .ct-nav-links {
       display: flex;
       align-items: center;
-      gap: 1.5rem;
+      gap: 0.75rem;
     }
-    .ct-nav-item {
+    .ct-nav-pill {
       font-size: 0.92rem;
       font-weight: 800;
-      color: var(--ct-text-secondary);
-      transition: color var(--ct-transition-fast);
-      position: relative;
-      white-space: nowrap;
-    }
-    .ct-nav-item:hover, .ct-nav-item.active {
-      color: #fff;
-    }
-    .ct-nav-item.active::after {
-      content: '';
-      position: absolute;
-      bottom: -6px;
-      left: 0;
-      right: 0;
-      height: 3px;
-      background: var(--ct-gradient-primary);
-      border-radius: 2px;
-      box-shadow: 0 0 12px var(--ct-neon-pink);
-    }
-    .ct-live-badge {
-      display: inline-flex;
-      align-items: center;
-      gap: 5px;
-      background: var(--ct-gradient-primary);
-      color: #fff;
-      padding: 3px 8px;
+      color: #cbd5e1;
+      padding: 0.55rem 1.25rem;
       border-radius: var(--ct-radius-full);
-      font-size: 0.68rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      box-shadow: 0 0 12px var(--ct-neon-pink);
+      transition: all var(--ct-transition-spring);
     }
-    .ct-live-dot {
-      width: 6px;
-      height: 6px;
-      background: #fff;
-      border-radius: 50%;
-      animation: ct-dot-pulse 1.2s infinite;
-    }
-    @keyframes ct-dot-pulse {
-      0%, 100% { opacity: 1; transform: scale(1); }
-      50% { opacity: 0.3; transform: scale(0.6); }
-    }
-
-    /* Header Actions */
-    .ct-header-actions {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-    }
-    .ct-btn-vip {
-      background: var(--ct-gradient-primary);
+    .ct-nav-pill:hover, .ct-nav-pill.active {
       color: #fff;
-      font-weight: 900;
-      font-size: 0.88rem;
-      padding: 0.65rem 1.4rem;
-      border-radius: var(--ct-radius-full);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      box-shadow: 0 0 25px rgba(255, 24, 121, 0.55);
-      transition: all var(--ct-transition-fast);
-      white-space: nowrap;
-      text-transform: uppercase;
-      letter-spacing: 0.04em;
-    }
-    .ct-btn-vip:hover {
-      box-shadow: 0 0 35px rgba(255, 24, 121, 0.85);
+      background: var(--ct-gradient-candy);
+      box-shadow: 0 0 20px rgba(255, 20, 117, 0.6);
       transform: scale(1.05);
     }
-    .ct-hamburger-btn {
-      display: none;
-      width: 44px;
-      height: 44px;
-      border-radius: var(--ct-radius-md);
-      background: var(--ct-bg-surface-elevated);
-      border: 1px solid var(--ct-border-neon);
-      align-items: center;
-      justify-content: center;
-      color: var(--ct-text-primary);
-    }
 
-    /* Mobile Drawer */
-    .ct-mobile-drawer {
-      position: fixed;
-      top: 0;
-      right: -340px;
-      width: 320px;
-      height: 100vh;
-      background: #10101c;
-      border-left: 2px solid var(--ct-border-neon);
-      z-index: 200;
-      padding: 1.75rem;
-      transition: right var(--ct-transition-normal);
-      display: flex;
-      flex-direction: column;
-      box-shadow: -15px 0 50px rgba(0,0,0,0.9);
-    }
-    .ct-mobile-drawer.open {
-      right: 0;
-    }
-    .ct-drawer-overlay {
-      position: fixed;
-      inset: 0;
-      background: rgba(0,0,0,0.85);
-      backdrop-filter: blur(6px);
-      z-index: 199;
-      display: none;
-    }
-    .ct-drawer-overlay.open {
-      display: block;
-    }
-
-    /* ==========================================================================
-       4. COMPONENT: TOP AD SLOT (300x100 / 728x90)
-       ========================================================================== */
-    .ct-ad-container {
-      margin: 1.75rem auto;
-      display: flex;
-      justify-content: center;
-      position: relative;
-    }
+    /* Top Ad Slot (728x90) */
     .ct-ad-slot-top {
-      width: 100%;
-      max-width: 800px;
-      background: linear-gradient(135deg, #1c1228 0%, #2c133a 50%, #1c1228 100%);
-      border: 2px solid var(--ct-border-neon);
-      border-radius: var(--ct-radius-lg);
+      background: linear-gradient(135deg, #241338 0%, #381242 50%, #241338 100%);
+      border: 3px solid rgba(255, 20, 117, 0.65);
+      border-radius: var(--ct-radius-xl);
+      padding: 1.25rem 2rem;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 1.75rem;
-      position: relative;
-      overflow: hidden;
-      box-shadow: var(--ct-shadow-ad);
-      backdrop-filter: blur(12px);
-    }
-    .ct-ad-slot-top::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 6px;
-      height: 100%;
-      background: var(--ct-gradient-primary);
-      box-shadow: 0 0 15px var(--ct-neon-pink);
-    }
-    .ct-ad-label {
-      font-size: 0.68rem;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      color: var(--ct-neon-pink);
-      font-weight: 800;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .ct-ad-title {
-      font-size: 1.05rem;
-      font-weight: 800;
-      color: #fff;
-    }
-    .ct-ad-sub {
-      font-size: 0.8rem;
-      color: #cbd5e1;
-    }
-    .ct-ad-cta {
-      background: var(--ct-gradient-primary);
-      color: #fff;
-      font-size: 0.82rem;
-      font-weight: 900;
-      padding: 0.55rem 1.25rem;
-      border-radius: var(--ct-radius-full);
-      transition: all var(--ct-transition-fast);
-      white-space: nowrap;
-      text-transform: uppercase;
-      box-shadow: 0 0 20px rgba(255, 24, 121, 0.5);
-    }
-    .ct-ad-cta:hover {
-      box-shadow: 0 0 30px var(--ct-neon-pink);
-      transform: scale(1.05);
+      margin: 2rem auto;
+      box-shadow: var(--ct-shadow-bubble);
     }
 
-    /* ==========================================================================
-       5. COMPONENT: FILTER CHIPS ROW (CATEGORIES)
-       ========================================================================== */
-    .ct-filter-row {
+    /* Bubbly Category Chips */
+    .ct-category-row {
       display: flex;
-      align-items: center;
-      gap: 0.65rem;
+      gap: 0.75rem;
       overflow-x: auto;
       padding: 0.75rem 0;
       margin-bottom: 2rem;
       scrollbar-width: none;
     }
-    .ct-filter-row::-webkit-scrollbar {
-      display: none;
-    }
-    .ct-filter-chip {
-      padding: 0.55rem 1.25rem;
+    .ct-category-chip {
+      padding: 0.65rem 1.4rem;
       border-radius: var(--ct-radius-full);
-      font-size: 0.88rem;
+      font-size: 0.9rem;
       font-weight: 800;
-      color: var(--ct-text-secondary);
-      background: var(--ct-bg-surface-card);
-      border: 1px solid var(--ct-border-subtle);
+      color: #f1f5f9;
+      background: #181226;
+      border: 2px solid rgba(255, 20, 117, 0.35);
       white-space: nowrap;
-      transition: all var(--ct-transition-fast);
       cursor: pointer;
+      transition: all var(--ct-transition-spring);
     }
-    .ct-filter-chip:hover {
-      color: #fff;
-      border-color: var(--ct-border-neon);
-      background: var(--ct-bg-surface-hover);
-      box-shadow: 0 0 15px rgba(255, 24, 121, 0.3);
-    }
-    .ct-filter-chip.active {
-      background: var(--ct-gradient-primary);
-      color: #fff;
+    .ct-category-chip.active, .ct-category-chip:hover {
+      background: var(--ct-gradient-candy);
       border-color: transparent;
-      box-shadow: 0 0 25px rgba(255, 24, 121, 0.55);
-      transform: scale(1.05);
+      color: #fff;
+      transform: scale(1.06);
+      box-shadow: 0 0 25px rgba(255, 20, 117, 0.7);
     }
 
-    /* ==========================================================================
-       6. COMPONENT: HERO FEATURE ROW
-       ========================================================================== */
+    /* Hero Card */
     .ct-hero-card {
-      position: relative;
       border-radius: var(--ct-radius-xl);
       overflow: hidden;
+      border: 3px solid rgba(255, 20, 117, 0.55);
+      background: #171128;
+      box-shadow: 0 30px 75px rgba(0,0,0,0.95), 0 0 50px rgba(255, 20, 117, 0.35);
       margin-bottom: 3.5rem;
-      border: 2px solid var(--ct-border-neon);
-      background: #12121e;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 45px rgba(255, 24, 121, 0.25);
-      transition: border-color var(--ct-transition-normal), box-shadow var(--ct-transition-normal);
-    }
-    .ct-hero-card:hover {
-      border-color: #ff1879;
-      box-shadow: 0 30px 70px rgba(0,0,0,0.95), 0 0 60px rgba(255, 24, 121, 0.4);
     }
     .ct-hero-media {
-      width: 100%;
       height: 520px;
       position: relative;
       display: flex;
       align-items: flex-end;
-      background: radial-gradient(circle at 75% 30%, #5e0a39 0%, #240938 45%, #07070e 90%);
-      overflow: hidden;
-    }
-    .ct-hero-mesh {
-      position: absolute;
-      inset: 0;
-      background-image: 
-        radial-gradient(at 10% 20%, rgba(255, 24, 121, 0.45) 0px, transparent 50%),
-        radial-gradient(at 85% 70%, rgba(139, 92, 246, 0.4) 0px, transparent 50%);
-      opacity: 0.85;
-    }
-    .ct-hero-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(180deg, rgba(7,7,12,0.1) 0%, rgba(7,7,12,0.85) 75%, rgba(7,7,12,0.98) 100%);
-      z-index: 1;
-    }
-    .ct-hero-content {
-      position: relative;
-      z-index: 2;
       padding: 3rem;
-      width: 100%;
-      max-width: 850px;
-    }
-    .ct-hero-badge-strip {
-      display: flex;
-      align-items: center;
-      gap: 0.75rem;
-      margin-bottom: 1rem;
-    }
-    .ct-badge-exclusive {
-      background: var(--ct-gradient-primary);
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      padding: 4px 12px;
-      border-radius: var(--ct-radius-sm);
-      box-shadow: 0 0 15px var(--ct-neon-pink);
-    }
-    .ct-badge-4k {
-      background: #18182a;
-      border: 1px solid var(--ct-border-neon);
-      color: var(--ct-neon-pink);
-      font-size: 0.75rem;
-      font-weight: 800;
-      padding: 4px 10px;
-      border-radius: var(--ct-radius-sm);
-    }
-    .ct-hero-title {
-      font-size: clamp(2rem, 4vw, 3.25rem);
-      line-height: 1.15;
-      margin-bottom: 0.85rem;
-      text-shadow: 0 4px 25px rgba(0,0,0,0.9);
-      font-weight: 900;
-    }
-    .ct-hero-meta {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-      color: var(--ct-text-secondary);
-      font-size: 0.95rem;
-      margin-bottom: 1.75rem;
-      font-weight: 600;
-    }
-    .ct-hero-actions {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
-      flex-wrap: wrap;
-    }
-    .ct-btn-play {
-      background: var(--ct-gradient-primary);
-      color: #fff;
-      font-weight: 900;
-      padding: 0.85rem 2rem;
-      border-radius: var(--ct-radius-full);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.75rem;
-      font-size: 1rem;
-      box-shadow: 0 0 35px rgba(255, 24, 121, 0.6);
-      transition: all var(--ct-transition-fast);
-      text-transform: uppercase;
-      letter-spacing: 0.03em;
-    }
-    .ct-btn-play:hover {
-      box-shadow: 0 0 45px var(--ct-neon-pink);
-      transform: scale(1.05);
-    }
-    .ct-btn-secondary {
-      background: rgba(255, 255, 255, 0.12);
-      backdrop-filter: blur(12px);
-      border: 1px solid var(--ct-border-neon);
-      color: #fff;
-      font-weight: 700;
-      padding: 0.85rem 1.6rem;
-      border-radius: var(--ct-radius-full);
-      display: inline-flex;
-      align-items: center;
-      gap: 0.5rem;
-      font-size: 0.95rem;
-      transition: all var(--ct-transition-fast);
-    }
-    .ct-btn-secondary:hover {
-      background: rgba(255, 24, 121, 0.25);
-      border-color: #fff;
+      background: radial-gradient(circle at 75% 35%, #6e0940 0%, #2f0c4a 50%, #090712 90%);
     }
 
-    /* ==========================================================================
-       7. COMPONENT: RESPONSIVE VIDEO GRID & CARDS
-       ========================================================================== */
-    .ct-section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.5rem;
-      padding-bottom: 0.75rem;
-      border-bottom: 1px solid var(--ct-border-subtle);
-    }
-    .ct-section-title {
-      font-size: 1.6rem;
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-weight: 900;
-    }
-    .ct-section-title-accent {
-      background: var(--ct-gradient-primary);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    /* 4 Cols Desktop -> 2 Tablet -> 1 Mobile */
+    /* Video Grid (4 cols) */
     .ct-video-grid {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 1.75rem;
       margin-bottom: 4rem;
     }
-
-    /* Video Card Glassmorphism */
     .ct-video-card {
-      background: var(--ct-bg-glass-card);
-      border: 1px solid var(--ct-border-subtle);
+      background: #181226;
+      border: 2px solid rgba(255, 20, 117, 0.35);
       border-radius: var(--ct-radius-lg);
       overflow: hidden;
       display: flex;
       flex-direction: column;
-      transition: transform var(--ct-transition-normal), border-color var(--ct-transition-normal), box-shadow var(--ct-transition-normal);
       cursor: pointer;
-      position: relative;
+      transition: all var(--ct-transition-spring);
     }
     .ct-video-card:hover {
-      transform: translateY(-6px) scale(1.02);
+      transform: translateY(-8px) scale(1.03);
       border-color: var(--ct-neon-pink);
-      box-shadow: 0 20px 45px -10px rgba(0, 0, 0, 0.9), 0 0 30px rgba(255, 24, 121, 0.35);
+      box-shadow: var(--ct-shadow-bubble);
     }
-    
-    /* 16:9 Thumbnail Area with CSS Gradient */
-    .ct-card-thumb-wrapper {
+    .ct-card-thumb {
+      width: 100%;
+      padding-top: 56.25%;
+      position: relative;
+    }
+
+    /* Video Watch 16:9 Player */
+    .ct-player-frame {
       position: relative;
       width: 100%;
-      padding-top: 56.25%; /* 16:9 ratio */
-      overflow: hidden;
-      background-color: #0c0c14;
-    }
-    .ct-card-thumb-gradient {
-      position: absolute;
-      inset: 0;
-      transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-    }
-    .ct-video-card:hover .ct-card-thumb-gradient {
-      transform: scale(1.1);
-      filter: saturate(1.35) brightness(1.1);
-    }
-    .ct-thumb-g1 { background: radial-gradient(circle at 30% 20%, #520930 0%, #1c0b31 55%, #07070f 100%); }
-    .ct-thumb-g2 { background: radial-gradient(circle at 70% 80%, #3a0c44 0%, #151034 50%, #080916 100%); }
-    .ct-thumb-g3 { background: radial-gradient(circle at 50% 30%, #5a0931 0%, #200833 60%, #070a14 100%); }
-    .ct-thumb-g4 { background: radial-gradient(circle at 20% 70%, #221248 0%, #440931 55%, #070d18 100%); }
-    .ct-thumb-g5 { background: radial-gradient(circle at 80% 30%, #540826 0%, #180d32 60%, #070e17 100%); }
-    .ct-thumb-g6 { background: radial-gradient(circle at 40% 60%, #300c48 0%, #121538 50%, #0b0714 100%); }
-    .ct-thumb-g7 { background: radial-gradient(circle at 60% 20%, #600a36 0%, #2b0728 50%, #070b17 100%); }
-    .ct-thumb-g8 { background: radial-gradient(circle at 30% 70%, #151f4c 0%, #400937 55%, #07070e 100%); }
-
-    /* Play Icon Hover Overlay */
-    .ct-thumb-play-overlay {
-      position: absolute;
-      inset: 0;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(7, 7, 12, 0.45);
-      opacity: 0;
-      transition: opacity var(--ct-transition-fast);
-    }
-    .ct-video-card:hover .ct-thumb-play-overlay {
-      opacity: 1;
-    }
-    .ct-play-circle {
-      width: 54px;
-      height: 54px;
-      border-radius: 50%;
-      background: var(--ct-gradient-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      color: #fff;
-      box-shadow: 0 0 25px var(--ct-neon-pink);
-      transform: scale(0.85);
-      transition: transform var(--ct-transition-fast);
-    }
-    .ct-video-card:hover .ct-play-circle {
-      transform: scale(1);
-    }
-
-    /* Thumbnail Badges */
-    .ct-thumb-badge-duration {
-      position: absolute;
-      bottom: 0.75rem;
-      right: 0.75rem;
-      background: rgba(7, 7, 12, 0.9);
-      color: #fff;
-      font-size: 0.75rem;
-      font-weight: 700;
-      padding: 3px 8px;
-      border-radius: var(--ct-radius-sm);
-      border: 1px solid rgba(255,255,255,0.15);
-      z-index: 2;
-    }
-    .ct-thumb-badge-hd {
-      position: absolute;
-      top: 0.75rem;
-      left: 0.75rem;
-      background: rgba(15, 15, 24, 0.9);
-      color: var(--ct-neon-cyan);
-      font-size: 0.7rem;
-      font-weight: 900;
-      padding: 3px 8px;
-      border-radius: 4px;
-      border: 1px solid rgba(6, 182, 212, 0.4);
-      z-index: 2;
-    }
-
-    /* Card Details */
-    .ct-card-body {
-      padding: 1.15rem;
-      display: flex;
-      flex-direction: column;
-      gap: 0.6rem;
-      flex: 1;
-    }
-    .ct-card-title {
-      font-size: 0.98rem;
-      font-weight: 800;
-      line-height: 1.35;
-      color: #fff;
-      display: -webkit-box;
-      -webkit-line-clamp: 2;
-      -webkit-box-orient: vertical;
-      overflow: hidden;
-      transition: color var(--ct-transition-fast);
-    }
-    .ct-video-card:hover .ct-card-title {
-      color: var(--ct-neon-pink);
-    }
-    .ct-card-model {
-      font-size: 0.85rem;
-      color: var(--ct-text-muted);
-      font-weight: 700;
-      display: flex;
-      align-items: center;
-      gap: 6px;
-    }
-    .ct-card-stats {
-      display: flex;
-      align-items: center;
-      gap: 0.6rem;
-      font-size: 0.78rem;
-      color: var(--ct-text-muted);
-      margin-top: auto;
-      font-weight: 600;
-    }
-    .ct-rating-badge {
-      color: #34d399;
-      font-weight: 800;
-    }
-
-    /* ==========================================================================
-       8. COMPONENT: VIDEO WATCH PAGE
-       ========================================================================== */
-    .ct-watch-layout {
-      display: grid;
-      grid-template-columns: 1fr 380px;
-      gap: 2rem;
-      margin-bottom: 4rem;
-    }
-    .ct-player-wrapper {
-      position: relative;
-      width: 100%;
-      padding-top: 56.25%; /* 16:9 ratio */
+      padding-top: 56.25%;
       background: #000;
       border-radius: var(--ct-radius-xl);
       overflow: hidden;
-      box-shadow: 0 30px 70px -15px rgba(0,0,0,0.95);
-      border: 2px solid var(--ct-border-neon);
+      border: 3px solid rgba(255, 20, 117, 0.65);
+      box-shadow: 0 30px 75px rgba(0,0,0,0.95);
     }
-    
-    /* Neon Ambilight Light Bleed */
-    .ct-ambilight-glow {
-      position: absolute;
-      inset: -25px;
-      background: radial-gradient(circle at 50% 50%, rgba(255, 24, 121, 0.35) 0%, rgba(139, 92, 246, 0.25) 50%, transparent 80%);
-      filter: blur(50px);
-      z-index: 0;
-      pointer-events: none;
-    }
-
     .ct-player-inner {
       position: absolute;
       inset: 0;
-      z-index: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      background: radial-gradient(circle at 60% 40%, #45092d 0%, #1a082b 50%, #030307 100%);
-    }
-    .ct-player-center-play {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      width: 90px;
-      height: 90px;
-      border-radius: 50%;
-      background: var(--ct-gradient-primary);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 0 45px var(--ct-neon-pink);
-      cursor: pointer;
-      transition: transform var(--ct-transition-fast);
-    }
-    .ct-player-center-play:hover {
-      transform: translate(-50%, -50%) scale(1.1);
-    }
-    
-    /* Player Controls Bar */
-    .ct-player-controls {
-      background: linear-gradient(180deg, transparent 0%, rgba(7, 7, 12, 0.95) 100%);
-      padding: 1.5rem 1.5rem 1rem;
-      margin-top: auto;
-      z-index: 2;
-    }
-    .ct-scrubber-bar {
-      width: 100%;
-      height: 8px;
-      background: rgba(255, 255, 255, 0.2);
-      border-radius: var(--ct-radius-full);
-      position: relative;
-      cursor: pointer;
-      margin-bottom: 1rem;
-    }
-    .ct-scrubber-progress {
-      position: absolute;
-      left: 0;
-      top: 0;
-      bottom: 0;
-      width: 42%;
-      background: var(--ct-gradient-primary);
-      border-radius: var(--ct-radius-full);
-      box-shadow: 0 0 14px var(--ct-neon-pink);
-    }
-    .ct-scrubber-handle {
-      position: absolute;
-      right: -7px;
-      top: 50%;
-      transform: translateY(-50%);
-      width: 16px;
-      height: 16px;
-      background: #fff;
-      border-radius: 50%;
-      box-shadow: 0 0 10px #fff;
-    }
-    .ct-controls-bottom {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      color: #fff;
-      font-size: 0.88rem;
-    }
-    .ct-controls-left, .ct-controls-right {
-      display: flex;
-      align-items: center;
-      gap: 1.25rem;
+      background: radial-gradient(circle at 50% 40%, #540a38 0%, #1e0a32 55%, #040308 100%);
     }
 
-    /* Video Details Block */
-    .ct-watch-info {
-      margin-top: 1.75rem;
-    }
-    .ct-watch-title {
-      font-size: 1.8rem;
-      line-height: 1.25;
-      margin-bottom: 1rem;
-      font-weight: 900;
-    }
-    .ct-watch-actions-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding-bottom: 1.5rem;
-      border-bottom: 1px solid var(--ct-border-subtle);
-    }
-    .ct-watch-meta-left {
-      display: flex;
-      align-items: center;
-      gap: 0.85rem;
-      font-size: 0.9rem;
-      color: var(--ct-text-muted);
-    }
-    .ct-action-pill {
-      background: var(--ct-bg-surface-card);
-      border: 1px solid var(--ct-border-subtle);
-      border-radius: var(--ct-radius-full);
-      padding: 0.6rem 1.2rem;
-      font-size: 0.85rem;
-      font-weight: 800;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: all var(--ct-transition-fast);
-    }
-    .ct-action-pill:hover, .ct-action-pill.active {
-      background: var(--ct-neon-pink);
-      border-color: var(--ct-neon-pink);
-      color: #fff;
-      box-shadow: 0 0 20px var(--ct-neon-pink);
-    }
-    
-    /* Model Tag & Subscribe Row */
-    .ct-model-bar {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding: 1.5rem 0;
-      border-bottom: 1px solid var(--ct-border-subtle);
-    }
-    .ct-model-info-link {
-      display: flex;
-      align-items: center;
-      gap: 1rem;
-      cursor: pointer;
-    }
-    .ct-model-avatar-sm {
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: var(--ct-gradient-primary);
-      padding: 2.5px;
-      box-shadow: 0 0 20px rgba(255, 24, 121, 0.5);
-    }
-    .ct-model-avatar-inner {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: #0a0a14;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-weight: 900;
-      font-size: 1.25rem;
-      color: #fff;
-    }
-
-    /* Live Cams Widget Placeholder Strip */
-    .ct-live-cams-widget {
-      margin-top: 2rem;
-      background: var(--ct-bg-glass-card);
-      border: 2px solid var(--ct-border-neon);
-      border-radius: var(--ct-radius-xl);
-      padding: 1.5rem;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.8);
-    }
-    .ct-live-cams-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 1.25rem;
-    }
-    .ct-live-cams-strip {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-    }
-    .ct-cam-card {
-      position: relative;
-      border-radius: var(--ct-radius-md);
-      overflow: hidden;
-      border: 1px solid var(--ct-border-subtle);
-      transition: all var(--ct-transition-fast);
-      cursor: pointer;
-    }
-    .ct-cam-card:hover {
-      border-color: var(--ct-neon-pink);
-      transform: translateY(-3px);
-      box-shadow: 0 10px 25px rgba(0,0,0,0.8), 0 0 20px rgba(255, 24, 121, 0.4);
-    }
-    .ct-cam-thumb {
-      width: 100%;
-      padding-top: 75%;
-      position: relative;
-      background: linear-gradient(135deg, #450928 0%, #170a2c 100%);
-    }
-
-    /* Watch Page Sidebar Stats Card */
-    .ct-sidebar-card {
-      background: var(--ct-bg-glass-card);
-      border: 1px solid var(--ct-border-neon);
-      border-radius: var(--ct-radius-xl);
-      padding: 1.75rem;
-      margin-bottom: 1.5rem;
-      box-shadow: 0 15px 40px rgba(0,0,0,0.8);
-    }
-    .ct-sidebar-title {
-      font-size: 1.15rem;
-      margin-bottom: 1.25rem;
-      padding-bottom: 0.65rem;
-      border-bottom: 1px solid var(--ct-border-subtle);
-      font-weight: 800;
-    }
-    .ct-stats-row {
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.9rem;
-      padding: 0.6rem 0;
-      border-bottom: 1px dashed rgba(255,255,255,0.08);
-    }
-    .ct-stats-label {
-      color: var(--ct-text-muted);
-    }
-    .ct-stats-val {
-      font-weight: 700;
-      color: #fff;
-    }
-
-    /* ==========================================================================
-       9. COMPONENT: MODEL / PROFILE PAGE
-       ========================================================================== */
-    .ct-model-hero {
-      position: relative;
-      border-radius: var(--ct-radius-xl);
-      overflow: hidden;
-      margin-bottom: 3rem;
-      border: 2px solid var(--ct-border-neon);
-      background: #12121e;
-      box-shadow: 0 25px 60px rgba(0,0,0,0.9), 0 0 40px rgba(255, 24, 121, 0.3);
-    }
-    .ct-model-banner {
-      height: 280px;
-      background: radial-gradient(circle at 70% 30%, #660a3c 0%, #24093c 50%, #0a0a14 100%);
-      position: relative;
-    }
-    .ct-model-profile-header {
-      padding: 0 2.5rem 2.5rem;
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-      gap: 2rem;
-      margin-top: -80px;
-      position: relative;
-      z-index: 2;
-    }
-    .ct-model-avatar-lg {
-      width: 150px;
-      height: 150px;
-      border-radius: 50%;
-      background: var(--ct-gradient-primary);
-      padding: 4px;
-      box-shadow: 0 0 45px rgba(255, 24, 121, 0.65);
-      flex-shrink: 0;
-    }
-    .ct-avatar-inner-lg {
-      width: 100%;
-      height: 100%;
-      border-radius: 50%;
-      background: #0e0e18;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 3.5rem;
-      font-weight: 900;
-      color: #fff;
-      font-family: 'Outfit', sans-serif;
-    }
-    .ct-model-titles {
-      flex: 1;
-      padding-top: 5rem;
-    }
-    .ct-model-name-lg {
-      font-size: 2.2rem;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      font-weight: 900;
-    }
-    .ct-model-stats-grid {
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 1.25rem;
-      margin: 2rem 2.5rem 0;
-      padding-top: 2rem;
-      border-top: 1px solid var(--ct-border-subtle);
-    }
-    .ct-stat-box {
-      background: #181828;
-      border: 1px solid var(--ct-border-subtle);
-      border-radius: var(--ct-radius-md);
-      padding: 1.2rem;
-      text-align: center;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    }
-    .ct-stat-number {
-      font-size: 1.6rem;
-      font-weight: 800;
-      color: #fff;
-    }
-    .ct-stat-label {
-      font-size: 0.75rem;
-      text-transform: uppercase;
-      letter-spacing: 0.05em;
-      color: var(--ct-text-muted);
-      margin-top: 4px;
-      font-weight: 700;
-    }
-
-    /* ==========================================================================
-       10. COMPONENT: FOOTER & LEGAL DISCLAIMER
-       ========================================================================== */
-    .ct-footer {
-      background: #050508;
-      border-top: 1px solid rgba(255, 24, 121, 0.3);
-      padding: 4rem 0 3rem;
-      margin-top: 6rem;
-      color: var(--ct-text-muted);
-      font-size: 0.88rem;
-    }
-    .ct-footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr 1fr;
-      gap: 3rem;
-      margin-bottom: 3rem;
-    }
-    .ct-disclaimer-box {
-      background: #0e0e18;
-      border: 1px solid rgba(255, 24, 121, 0.3);
-      border-radius: var(--ct-radius-lg);
-      padding: 1.5rem;
-      margin-bottom: 2.5rem;
-      font-size: 0.8rem;
-      line-height: 1.6;
-      color: #cbd5e1;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.7);
-    }
-    .ct-disclaimer-box strong {
-      color: var(--ct-neon-pink);
-    }
-
-    /* ==========================================================================
-       11. COMPONENT: STICKY AD BARS (MOBILE 320x50 & DESKTOP 300x100)
-       ========================================================================== */
-    .ct-sticky-desktop-ad {
+    /* Sticky Ads */
+    .ct-sticky-desktop {
       position: fixed;
       bottom: 24px;
       right: 24px;
-      width: 320px;
-      height: 105px;
-      background: linear-gradient(135deg, rgba(28, 16, 40, 0.95) 0%, rgba(47, 14, 56, 0.95) 100%);
-      border: 2px solid var(--ct-border-neon);
+      width: 330px;
+      height: 110px;
+      background: linear-gradient(135deg, rgba(38, 18, 56, 0.95) 0%, rgba(58, 14, 62, 0.95) 100%);
+      border: 3px solid rgba(255, 20, 117, 0.7);
       border-radius: var(--ct-radius-lg);
-      box-shadow: 0 15px 45px rgba(0,0,0,0.9), 0 0 25px rgba(255, 24, 121, 0.4);
+      box-shadow: var(--ct-shadow-bubble);
       z-index: 80;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      padding: 1rem 1.25rem;
+      padding: 1.25rem;
       backdrop-filter: blur(16px);
-      transition: transform var(--ct-transition-normal), opacity var(--ct-transition-normal);
-    }
-    .ct-sticky-desktop-ad.dismissed {
-      transform: translateY(130%);
-      opacity: 0;
-      pointer-events: none;
-    }
-    .ct-ad-close-btn {
-      position: absolute;
-      top: 6px;
-      right: 6px;
-      width: 22px;
-      height: 22px;
-      border-radius: 50%;
-      background: rgba(255,255,255,0.15);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 11px;
-      cursor: pointer;
-      transition: background var(--ct-transition-fast);
-    }
-    .ct-ad-close-btn:hover {
-      background: var(--ct-neon-pink);
     }
 
-    .ct-sticky-mobile-ad {
-      display: none;
-      position: fixed;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 54px;
-      background: rgba(16, 16, 28, 0.95);
-      border-top: 2px solid var(--ct-border-neon);
-      box-shadow: 0 -6px 25px rgba(0,0,0,0.9);
-      z-index: 85;
-      padding: 0 1.25rem;
-      align-items: center;
-      justify-content: space-between;
-      backdrop-filter: blur(12px);
+    @media (max-width: 1100px) {
+      .ct-video-grid { grid-template-columns: repeat(2, 1fr); }
     }
-    .ct-sticky-mobile-ad.dismissed {
-      display: none !important;
-    }
-
-    /* ==========================================================================
-       12. RESPONSIVE BREAKPOINTS
-       ========================================================================== */
-    @media (max-width: 1200px) {
-      .ct-video-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-      .ct-watch-layout {
-        grid-template-columns: 1fr;
-      }
-      .ct-model-stats-grid {
-        grid-template-columns: repeat(3, 1fr);
-      }
-    }
-
-    @media (max-width: 900px) {
-      .ct-video-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .ct-nav-links {
-        display: none;
-      }
-      .ct-hamburger-btn {
-        display: flex;
-      }
-      .ct-footer-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-      .ct-live-cams-strip {
-        grid-template-columns: repeat(2, 1fr);
-      }
-    }
-
     @media (max-width: 640px) {
-      .ct-video-grid {
-        grid-template-columns: 1fr;
-      }
-      .ct-hero-media {
-        height: 400px;
-      }
-      .ct-hero-content {
-        padding: 1.5rem;
-      }
-      .ct-footer-grid {
-        grid-template-columns: 1fr;
-      }
-      .ct-model-profile-header {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        margin-top: -75px;
-      }
-      .ct-model-titles {
-        padding-top: 1rem;
-      }
-      .ct-model-name-lg {
-        justify-content: center;
-      }
-      .ct-model-stats-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-      .ct-sticky-desktop-ad {
-        display: none !important;
-      }
-      .ct-sticky-mobile-ad {
-        display: flex;
-      }
+      .ct-video-grid { grid-template-columns: 1fr; }
+      .ct-nav-links { display: none; }
+      .ct-sticky-desktop { display: none; }
     }
   </style>
 </head>
 <body>
 
-  <!-- Ambient Floating Glow Mesh -->
-  <div class="ct-ambient-glow-wrapper">
-    <div class="ct-glow-orb ct-glow-orb-pink"></div>
-    <div class="ct-glow-orb ct-glow-orb-violet"></div>
+  <div class="ct-ambient-glow">
+    <div class="ct-bubble-orb" style="width: 600px; height: 600px; background: #ff1475; top: -200px; right: 10%;"></div>
+    <div class="ct-bubble-orb" style="width: 550px; height: 550px; background: #9333ea; bottom: 10%; left: -100px; animation-delay: -4s;"></div>
   </div>
 
-  <!-- Interactive View Switcher Bar (Template Preview Demo) -->
+  <!-- BUBBLY DEMO CONTROLLER STRIP -->
   <div class="ct-demo-bar">
-    <div class="ct-demo-tabs">
-      <span style="color: #ff1879; font-size: 0.75rem; margin-right: 4px; font-weight: 800;">ACTIVE VIEW:</span>
+    <div style="display: flex; gap: 0.6rem; align-items: center;">
+      <span style="color: #ff1475; font-weight: 900; font-size: 0.75rem;">💖 ACTIVE VIEW:</span>
       <button class="ct-demo-tab-btn active" onclick="switchThemeView('home', this)">Auditions Feed</button>
-      <button class="ct-demo-tab-btn" onclick="switchThemeView('watch', this)">Watch Studio 4K</button>
-      <button class="ct-demo-tab-btn" onclick="switchThemeView('model', this)">Model Profile</button>
-      <button class="ct-demo-tab-btn" onclick="switchThemeView('all', this)">Continuous Full-Site</button>
+      <button class="ct-demo-tab-btn" onclick="switchThemeView('watch', this)">Watch 4K Player</button>
+      <button class="ct-demo-tab-btn" onclick="switchThemeView('model', this)">Sweet Models</button>
     </div>
-    <div style="font-size: 0.78rem; color: #fff; display: flex; align-items: center; gap: 8px;">
-      <span style="color: var(--ct-neon-pink); font-weight: 900; background: rgba(255,24,121,0.2); padding: 2px 8px; border-radius: 4px;">18+ VIP</span>
-      <span>Couchtryouts Bold Cyber-Glam</span>
+    <div style="font-weight: 800; color: #fff;">
+      <span style="color: #ff1475;">18+</span> Bubbly Candy-Glam Tube
     </div>
   </div>
 
   <!-- HEADER -->
   <header class="ct-header">
     <div class="ct-container ct-header-inner">
-      <!-- Brand Logo with Transparent Background & Glow -->
-      <a href="#home" class="ct-brand" onclick="switchThemeView('home')">
+      <a href="#home" onclick="switchThemeView('home')">
         <img src="/public/assets/aistudio/couchtryouts_transparent_d61e44ce.png" alt="Couchtryouts" class="ct-brand-logo">
       </a>
 
-      <!-- Large Centered Search Bar -->
       <div class="ct-search-box">
-        <svg class="ct-search-icon" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
-        </svg>
-        <input type="text" class="ct-search-input" placeholder="Search auditions, models, 4K scenes, chemistry..." id="ctSearchInput">
-        <span class="ct-search-shortcut">/</span>
+        <input type="text" class="ct-search-input" placeholder="Search tryouts, sweet models, 4K scenes, flirtatious callbacks...">
       </div>
 
-      <!-- Nav Links -->
       <nav class="ct-nav-links">
-        <a href="#home" class="ct-nav-item active" onclick="switchThemeView('home')">Auditions</a>
-        <a href="#watch" class="ct-nav-item" onclick="switchThemeView('watch')">Watch 4K</a>
-        <a href="#models" class="ct-nav-item" onclick="switchThemeView('model')">Top Models</a>
-        <a href="#cams" class="ct-nav-item" onclick="switchThemeView('watch')">
-          Live Cams <span class="ct-live-badge"><span class="ct-live-dot"></span>94 LIVE</span>
-        </a>
+        <button class="ct-nav-pill active" onclick="switchThemeView('home')">Auditions 💖</button>
+        <button class="ct-nav-pill" onclick="switchThemeView('watch')">Watch 4K ✨</button>
+        <button class="ct-nav-pill" onclick="switchThemeView('model')">Models 👑</button>
       </nav>
 
-      <!-- Actions -->
-      <div class="ct-header-actions">
-        <button class="ct-btn-vip" onclick="switchThemeView('watch')">
-          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M5 16L3 5l5.5 5L12 4l3.5 6L21 5l-2 11H5m14 3c0 .6-.4 1-1 1H6c-.6 0-1-.4-1-1v-1h14v1z"/></svg>
-          VIP Pass
-        </button>
-        <button class="ct-hamburger-btn" onclick="toggleMobileDrawer()" aria-label="Open Navigation">
-          <svg width="22" height="22" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M4 6h16M4 12h16M4 18h16"></path></svg>
-        </button>
-      </div>
+      <button class="ct-bubble-btn" onclick="switchThemeView('watch')" style="padding: 0.75rem 1.6rem; background: var(--ct-gradient-candy); color: #fff; font-weight: 900; box-shadow: 0 0 25px rgba(255,20,117,0.7);">
+        👑 JOIN VIP CLUB
+      </button>
     </div>
   </header>
 
-  <!-- Mobile Drawer -->
-  <div class="ct-drawer-overlay" id="ctDrawerOverlay" onclick="toggleMobileDrawer()"></div>
-  <aside class="ct-mobile-drawer" id="ctMobileDrawer">
-    <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 2rem;">
-      <img src="/public/assets/aistudio/couchtryouts_transparent_d61e44ce.png" alt="Couchtryouts" style="height: 42px;">
-      <button onclick="toggleMobileDrawer()" style="color: #cbd5e1; font-size: 1.6rem;">✕</button>
-    </div>
-    <div style="display: flex; flex-direction: column; gap: 1.5rem; font-size: 1.15rem; font-weight: 800;">
-      <a href="#home" onclick="switchThemeView('home'); toggleMobileDrawer();">Auditions Feed</a>
-      <a href="#watch" onclick="switchThemeView('watch'); toggleMobileDrawer();">Watch Studio 4K</a>
-      <a href="#model" onclick="switchThemeView('model'); toggleMobileDrawer();">Featured Model</a>
-      <a href="#live" onclick="switchThemeView('watch'); toggleMobileDrawer();" style="color: var(--ct-neon-pink);">Live Webcams (94)</a>
-      <a href="#vip" onclick="toggleMobileDrawer();" style="color: #fbbf24;">Join VIP Pass</a>
-    </div>
-    <div style="margin-top: auto; padding-top: 1.5rem; border-top: 1px solid var(--ct-border-subtle); font-size: 0.8rem; color: #a0aec0;">
-      Couchtryouts 18+ Streaming Network · 2257 Verified
-    </div>
-  </aside>
-
-  <!-- TOP AD SLOT (300x100 / 728x90) -->
+  <!-- TOP AD -->
   <div class="ct-container">
-    <div class="ct-ad-container">
-      <div class="ct-ad-slot-top">
-        <div>
-          <span class="ct-ad-label">
-            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2L1 21h22L12 2zm0 4l7.53 13H4.47L12 6z"/></svg>
-            VIP SPONSOR OFFER · 50% OFF UNLIMITED ACCESS
-          </span>
-          <div class="ct-ad-title">Neon Velvet VIP Lounge — Instant Access to 400+ Uncut 4K Scenes</div>
-          <div class="ct-ad-sub">Stream in uncompressed 60fps with multi-camera private auditions</div>
+    <div class="ct-ad-slot-top">
+      <div>
+        <div style="color: #facc15; font-size: 0.8rem; font-weight: 900; text-transform: uppercase;">
+          🍭 CANDY SPONSOR · 50% OFF COUCHTRYOUTS VIP
         </div>
-        <button class="ct-ad-cta">CLAIM VIP PASS</button>
+        <div style="font-size: 1.15rem; font-weight: 900; color: #fff; margin-top: 4px;">
+          Unlock 400+ Uncut 4K Auditions & Private Backstage Callbacks 🍓
+        </div>
       </div>
+      <button class="ct-bubble-btn" style="padding: 0.75rem 1.8rem; background: var(--ct-gradient-candy); color: #fff; font-weight: 900; box-shadow: 0 0 25px rgba(255,20,117,0.7);">
+        CLAIM PASS 💖
+      </button>
     </div>
   </div>
 
-  <!-- MAIN CONTENT CONTAINER -->
+  <!-- MAIN -->
   <main class="ct-container">
-
-    <!-- ====================================================================
-         VIEW 1: HOME PAGE
-         ==================================================================== -->
-    <div id="view-home" class="ct-view-section">
-      <!-- Hero Row: Featured Video -->
+    <!-- VIEW 1: HOME -->
+    <div id="view-home">
+      <!-- Hero -->
       <section class="ct-hero-card">
         <div class="ct-hero-media">
-          <div class="ct-hero-mesh"></div>
-          <div class="ct-hero-overlay"></div>
-          <div class="ct-hero-content">
-            <div class="ct-hero-badge-strip">
-              <span class="ct-badge-exclusive">EXCLUSIVE TRYOUT</span>
-              <span class="ct-badge-4k">4K 60FPS HDR</span>
-              <span style="font-size: 0.8rem; color: #cbd5e1; font-weight: 700;">Episode #402</span>
+          <div style="max-width: 800px;">
+            <div style="background: var(--ct-gradient-candy); padding: 4px 14px; border-radius: 9999px; display: inline-block; font-size: 0.75rem; font-weight: 900; margin-bottom: 1rem;">
+              👑 FEATURED TRYOUT DEBUT
             </div>
-            <h1 class="ct-hero-title">Neon Velvet Casting Debut: Private Midnight Audition</h1>
-            <div class="ct-hero-meta">
-              <span>Starring: <strong style="color: #ff1879;">Lexi Lux</strong> & <strong style="color: #a78bfa;">Aria Vane</strong></span>
-              <span>·</span>
-              <span class="ct-tabular">48:24 Uncut</span>
-              <span>·</span>
-              <span class="ct-tabular">1,482,900 views</span>
-              <span>·</span>
-              <span class="ct-rating-badge">★ 99.8%</span>
-            </div>
-            <div class="ct-hero-actions">
-              <button class="ct-btn-play" onclick="switchThemeView('watch')">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                Watch Audition 4K
-              </button>
-              <button class="ct-btn-secondary" onclick="switchThemeView('model')">
-                <svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
-                Model Profile
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <!-- Filter Chips Row (Categories) -->
-      <div class="ct-filter-row">
-        <button class="ct-filter-chip active">🔥 Trending Auditions</button>
-        <button class="ct-filter-chip">Casting Couch</button>
-        <button class="ct-filter-chip">VIP Exclusives</button>
-        <button class="ct-filter-chip">POV Tryouts</button>
-        <button class="ct-filter-chip">Verified Models</button>
-        <button class="ct-filter-chip">4K Ultra HD</button>
-        <button class="ct-filter-chip">Brunettes</button>
-        <button class="ct-filter-chip">Blondes</button>
-        <button class="ct-filter-chip">Redheads</button>
-        <button class="ct-filter-chip">Backstage Rehearsals</button>
-      </div>
-
-      <!-- Video Grid Section -->
-      <section>
-        <div class="ct-section-header">
-          <h2 class="ct-section-title">
-            <span>Trending</span>
-            <span class="ct-section-title-accent">Audition Premieres</span>
-          </h2>
-          <a href="#all" class="ct-view-all" style="color: var(--ct-neon-pink); font-weight: 800; font-size: 0.9rem;">View All 1,420 Videos →</a>
-        </div>
-
-        <div class="ct-video-grid">
-          <!-- Video Card 1 -->
-          <article class="ct-video-card" onclick="switchThemeView('watch')">
-            <div class="ct-card-thumb-wrapper">
-              <div class="ct-card-thumb-gradient ct-thumb-g1"></div>
-              <div class="ct-thumb-play-overlay">
-                <div class="ct-play-circle"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-              </div>
-              <span class="ct-thumb-badge-hd">4K 60FPS</span>
-              <span class="ct-thumb-badge-duration ct-tabular">34:18</span>
-            </div>
-            <div class="ct-card-body">
-              <h3 class="ct-card-title">Midnight Studio Callback: Velvet Chemistry Under Neon Lights</h3>
-              <div class="ct-card-model">
-                <span>Model: <strong style="color: #fff;">Sienna Rose</strong></span>
-              </div>
-              <div class="ct-card-stats">
-                <span class="ct-tabular">1.4M views</span>
-                <span>·</span>
-                <span>2 days ago</span>
-                <span>·</span>
-                <span class="ct-rating-badge">99.4%</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Video Card 2 -->
-          <article class="ct-video-card" onclick="switchThemeView('watch')">
-            <div class="ct-card-thumb-wrapper">
-              <div class="ct-card-thumb-gradient ct-thumb-g2"></div>
-              <div class="ct-thumb-play-overlay">
-                <div class="ct-play-circle"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-              </div>
-              <span class="ct-thumb-badge-hd">4K UHD</span>
-              <span class="ct-thumb-badge-duration ct-tabular">28:45</span>
-            </div>
-            <div class="ct-card-body">
-              <h3 class="ct-card-title">First Time In Front Of The Lens: Unscripted Nervous Seduction</h3>
-              <div class="ct-card-model">
-                <span>Model: <strong style="color: #fff;">Chloe Vibe</strong></span>
-              </div>
-              <div class="ct-card-stats">
-                <span class="ct-tabular">2.1M views</span>
-                <span>·</span>
-                <span>4 days ago</span>
-                <span>·</span>
-                <span class="ct-rating-badge">99.1%</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Video Card 3 -->
-          <article class="ct-video-card" onclick="switchThemeView('watch')">
-            <div class="ct-card-thumb-wrapper">
-              <div class="ct-card-thumb-gradient ct-thumb-g3"></div>
-              <div class="ct-thumb-play-overlay">
-                <div class="ct-play-circle"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-              </div>
-              <span class="ct-thumb-badge-hd">4K 60FPS</span>
-              <span class="ct-thumb-badge-duration ct-tabular">42:10</span>
-            </div>
-            <div class="ct-card-body">
-              <h3 class="ct-card-title">The Director's Cut: Extended Couch Audition & Interview Session</h3>
-              <div class="ct-card-model">
-                <span>Model: <strong style="color: #fff;">Kira Noir</strong></span>
-              </div>
-              <div class="ct-card-stats">
-                <span class="ct-tabular">890K views</span>
-                <span>·</span>
-                <span>1 week ago</span>
-                <span>·</span>
-                <span class="ct-rating-badge">98.8%</span>
-              </div>
-            </div>
-          </article>
-
-          <!-- Video Card 4 -->
-          <article class="ct-video-card" onclick="switchThemeView('watch')">
-            <div class="ct-card-thumb-wrapper">
-              <div class="ct-card-thumb-gradient ct-thumb-g4"></div>
-              <div class="ct-thumb-play-overlay">
-                <div class="ct-play-circle"><svg width="24" height="24" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></div>
-              </div>
-              <span class="ct-thumb-badge-hd">1080p 60FPS</span>
-              <span class="ct-thumb-badge-duration ct-tabular">22:04</span>
-            </div>
-            <div class="ct-card-body">
-              <h3 class="ct-card-title">Backstage Pass: Intimate Dressing Room Rehearsal & Confessions</h3>
-              <div class="ct-card-model">
-                <span>Model: <strong style="color: #fff;">Mia Thorne</strong></span>
-              </div>
-              <div class="ct-card-stats">
-                <span class="ct-tabular">650K views</span>
-                <span>·</span>
-                <span>2 weeks ago</span>
-                <span>·</span>
-                <span class="ct-rating-badge">97.5%</span>
-              </div>
-            </div>
-          </article>
-        </div>
-      </section>
-    </div>
-
-    <!-- ====================================================================
-         VIEW 2: VIDEO WATCH PAGE
-         ==================================================================== -->
-    <div id="view-watch" class="ct-view-section" style="display: none;">
-      <div class="ct-watch-layout">
-        <!-- Main Video Area -->
-        <div>
-          <div style="position: relative;">
-            <div class="ct-ambilight-glow"></div>
-            <div class="ct-player-wrapper">
-              <div class="ct-player-inner">
-                <div style="padding: 1.25rem 1.5rem; display: flex; justify-content: space-between; align-items: center; z-index: 2;">
-                  <span style="font-size: 0.85rem; font-weight: 800; color: #fff; background: rgba(0,0,0,0.6); padding: 5px 12px; border-radius: var(--ct-radius-sm); border: 1px solid var(--ct-border-neon);">
-                    COUCHTRYOUTS ORIGINAL · 4K UHD 60FPS MASTER
-                  </span>
-                  <span style="font-size: 0.78rem; background: var(--ct-gradient-primary); color: #fff; padding: 4px 10px; border-radius: 4px; font-weight: 900; box-shadow: 0 0 15px var(--ct-neon-pink);">
-                    UNCUT PRODUCER CUT
-                  </span>
-                </div>
-
-                <div class="ct-player-center-play" onclick="togglePlayerPlay()">
-                  <svg id="ctPlaySvg" width="40" height="40" fill="#fff" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg>
-                </div>
-
-                <div class="ct-player-controls">
-                  <div class="ct-scrubber-bar" onclick="scrubVideo(event)">
-                    <div class="ct-scrubber-progress" id="ctPlayerProgress">
-                      <div class="ct-scrubber-handle"></div>
-                    </div>
-                  </div>
-                  <div class="ct-controls-bottom">
-                    <div class="ct-controls-left">
-                      <button onclick="togglePlayerPlay()"><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></button>
-                      <button><svg width="22" height="22" fill="currentColor" viewBox="0 0 24 24"><path d="M3 9v6h4l5 5V4L7 9H3zm13.5 3c0-1.77-1.02-3.29-2.5-4.03v8.05c1.48-.73 2.5-2.25 2.5-4.02z"/></svg></button>
-                      <span class="ct-tabular" style="font-size: 0.88rem; font-weight: 700; color: #cbd5e1;">14:24 / 34:18</span>
-                    </div>
-                    <div class="ct-controls-right">
-                      <span style="font-size: 0.78rem; font-weight: 900; background: rgba(255,24,121,0.25); color: var(--ct-neon-pink); padding: 3px 8px; border-radius: 4px; border: 1px solid var(--ct-neon-pink);">4K 60FPS</span>
-                      <button><svg width="20" height="20" fill="currentColor" viewBox="0 0 24 24"><path d="M7 14H5v5h5v-2H7v-3zm-2-4h2V7h3V5H5v5zm12 7h-3v2h5v-5h-2v3zM14 5v2h3v3h2V5h-5z"/></svg></button>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <!-- Video Info & Interactive Actions -->
-          <div class="ct-watch-info">
-            <h1 class="ct-watch-title">🔥 Private Couch Audition: Sensual Neon Chemistry (Uncut 4K) ✨</h1>
-            
-            <div class="ct-watch-actions-bar">
-              <div class="ct-watch-meta-left">
-                <span class="ct-tabular" style="font-weight: 800; color: #fff; font-size: 1rem;">1,284,920 views</span>
-                <span>·</span>
-                <span>Premiered Oct 26, 2026</span>
-                <span>·</span>
-                <span style="color: #34d399; font-weight: 800;">99.4% Rating</span>
-              </div>
-
-              <div style="display: flex; gap: 0.75rem;">
-                <button class="ct-action-pill active" onclick="alert('Liked this scene!')">
-                  👍 <span class="ct-tabular">48.2K</span>
-                </button>
-                <button class="ct-action-pill" onclick="alert('Dislike recorded')">
-                  👎 <span class="ct-tabular">612</span>
-                </button>
-                <button class="ct-action-pill" onclick="alert('Link copied to clipboard!')">
-                  Share
-                </button>
-              </div>
-            </div>
-
-            <!-- Model Info Row -->
-            <div class="ct-model-bar">
-              <div class="ct-model-info-link" onclick="switchThemeView('model')">
-                <div class="ct-model-avatar-sm">
-                  <div class="ct-model-avatar-inner">SR</div>
-                </div>
-                <div>
-                  <div style="font-size: 1.15rem; font-weight: 900; color: #fff;">
-                    Sienna Rose 👑
-                  </div>
-                  <div style="font-size: 0.82rem; color: #cbd5e1;">320K Subscribers · 142 Exclusive Auditions</div>
-                </div>
-              </div>
-              <button class="ct-btn-vip" onclick="alert('Subscribed to Sienna Rose VIP!')">+ Subscribe VIP</button>
-            </div>
-
-            <!-- Live Cams Widget Strip -->
-            <div class="ct-live-cams-widget">
-              <div class="ct-live-cams-header">
-                <h3 style="font-size: 1.1rem; font-weight: 900; color: #fff;">LIVE CAMS HAPPENING RIGHT NOW</h3>
-                <span style="font-size: 0.85rem; color: var(--ct-neon-pink); font-weight: 800; cursor: pointer;">View All 94 Live Studios →</span>
-              </div>
-              <div class="ct-live-cams-strip">
-                <div class="ct-cam-card" onclick="alert('Joining private webcam room: Lexi_Live...')">
-                  <div class="ct-cam-thumb" style="background: radial-gradient(circle, #450928 0%, #170a2c 100%);"></div>
-                </div>
-                <div class="ct-cam-card" onclick="alert('Joining private webcam room: Scarlett_VIP...')">
-                  <div class="ct-cam-thumb" style="background: radial-gradient(circle, #2a0c3f 0%, #0d0a22 100%);"></div>
-                </div>
-                <div class="ct-cam-card" onclick="alert('Joining private webcam room: VelvetDuet...')">
-                  <div class="ct-cam-thumb" style="background: radial-gradient(circle, #4e0a24 0%, #170c2e 100%);"></div>
-                </div>
-                <div class="ct-cam-card" onclick="alert('Joining private webcam room: Mia_Rose4K...')">
-                  <div class="ct-cam-thumb" style="background: radial-gradient(circle, #10193d 0%, #2f0724 100%);"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <!-- Sidebar Specs Card -->
-        <aside>
-          <div class="ct-sidebar-card">
-            <h3 class="ct-sidebar-title">Scene Specifications</h3>
-            <div class="ct-stats-row">
-              <span class="ct-stats-label">Master Resolution</span>
-              <span class="ct-stats-val ct-tabular" style="color: var(--ct-neon-cyan);">3840 x 2160 (4K UHD)</span>
-            </div>
-            <div class="ct-stats-row">
-              <span class="ct-stats-label">Frame Rate</span>
-              <span class="ct-stats-val ct-tabular">59.94 fps</span>
-            </div>
-            <div class="ct-stats-row">
-              <span class="ct-stats-label">Video Bitrate</span>
-              <span class="ct-stats-val ct-tabular">28.4 Mbps (HEVC/H.265)</span>
-            </div>
-            <div class="ct-stats-row">
-              <span class="ct-stats-label">Production Studio</span>
-              <span class="ct-stats-val" style="color: var(--ct-neon-pink);">Couchtryouts Originals</span>
-            </div>
-            <div class="ct-stats-row">
-              <span class="ct-stats-label">Content Compliance</span>
-              <span class="ct-stats-val" style="color: #34d399;">18 U.S.C. 2257 Verified</span>
-            </div>
-          </div>
-        </aside>
-      </div>
-    </div>
-
-    <!-- ====================================================================
-         VIEW 3: MODEL / PROFILE PAGE
-         ==================================================================== -->
-    <div id="view-model" class="ct-view-section" style="display: none;">
-      <section class="ct-model-hero">
-        <div class="ct-model-banner"></div>
-        <div class="ct-model-profile-header">
-          <div class="ct-model-avatar-lg">
-            <div class="ct-avatar-inner-lg">SR</div>
-          </div>
-          <div class="ct-model-titles">
-            <h1 class="ct-model-name-lg">
-              Sienna Rose 👑
+            <h1 style="font-size: 3rem; line-height: 1.1; margin-bottom: 1rem;">
+              Neon Velvet Casting Debut: Private Midnight Audition 💖
             </h1>
-            <div style="color: var(--ct-neon-pink); font-size: 0.95rem; font-weight: 800; margin-top: 4px;">
-              @siennarose · Couchtryouts Exclusive VIP Lead
+            <p style="font-size: 1.05rem; font-weight: 700; color: #f1f5f9; margin-bottom: 1.5rem;">
+              Starring: <strong style="color: #ff1475;">Sienna Rose 👑</strong> & <strong style="color: #c084fc;">Aria Vane 🍓</strong> · 48:24 Uncut 4K · 1.4M views
+            </p>
+            <div style="display: flex; gap: 1rem;">
+              <button class="ct-bubble-btn" onclick="switchThemeView('watch')" style="padding: 1rem 2.2rem; background: var(--ct-gradient-candy); color: #fff; font-weight: 900; font-size: 1rem; box-shadow: 0 0 35px rgba(255,20,117,0.8);">
+                WATCH AUDITION 4K 🎬
+              </button>
+              <button class="ct-bubble-btn" onclick="switchThemeView('model')" style="padding: 1rem 2rem; background: #241a3d; border: 2px solid rgba(255,20,117,0.5); color: #fff; font-weight: 800; font-size: 1rem;">
+                Model Fan Club 💖
+              </button>
             </div>
-            <p style="margin-top: 0.85rem; color: #cbd5e1; max-width: 650px; font-size: 0.95rem;">
-              Top award-winning audition performer and exclusive contract creator at Couchtryouts. Acclaimed for intense unscripted chemistry, genuine callbacks, and private midnight premieres.
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Chips -->
+      <div class="ct-category-row">
+        <button class="ct-category-chip active">🔥 All Auditions</button>
+        <button class="ct-category-chip">💋 Couch Tryouts</button>
+        <button class="ct-category-chip">💖 VIP Sweethearts</button>
+        <button class="ct-category-chip">✨ 4K Glam Sessions</button>
+        <button class="ct-category-chip">🍓 POV Auditions</button>
+        <button class="ct-category-chip">🍭 Bubblegum Blondes</button>
+        <button class="ct-category-chip">🍒 Sweet Brunettes</button>
+      </div>
+
+      <!-- Video Grid -->
+      <div class="ct-video-grid">
+        <article class="ct-video-card" onclick="switchThemeView('watch')">
+          <div class="ct-card-thumb" style="background: radial-gradient(circle at 30% 20%, #580932 0%, #1c0b31 60%, #07070f 100%);"></div>
+          <div style="padding: 1.25rem;">
+            <h3 style="font-size: 1rem; font-weight: 900;">💖 Midnight Velvet Audition: Sensual Neon Chemistry</h3>
+            <div style="color: #cbd5e1; font-size: 0.85rem; margin-top: 6px; font-weight: 700;">Model: Sienna Rose</div>
+            <div style="color: #ff1475; font-size: 0.8rem; font-weight: 800; margin-top: 8px;">1.4M views · ★ 99.4% Loves</div>
+          </div>
+        </article>
+
+        <article class="ct-video-card" onclick="switchThemeView('watch')">
+          <div class="ct-card-thumb" style="background: radial-gradient(circle at 70% 80%, #3e0c4a 0%, #151034 50%, #080916 100%);"></div>
+          <div style="padding: 1.25rem;">
+            <h3 style="font-size: 1rem; font-weight: 900;">🍓 First Time On The Couch: Sweet & Flirty Callback</h3>
+            <div style="color: #cbd5e1; font-size: 0.85rem; margin-top: 6px; font-weight: 700;">Model: Chloe Vibe</div>
+            <div style="color: #ff1475; font-size: 0.8rem; font-weight: 800; margin-top: 8px;">2.1M views · ★ 99.1% Loves</div>
+          </div>
+        </article>
+
+        <article class="ct-video-card" onclick="switchThemeView('watch')">
+          <div class="ct-card-thumb" style="background: radial-gradient(circle at 50% 30%, #5e0934 0%, #200833 60%, #070a14 100%);"></div>
+          <div style="padding: 1.25rem;">
+            <h3 style="font-size: 1rem; font-weight: 900;">💋 The Director's Sweet Cut: Private Dressing Room</h3>
+            <div style="color: #cbd5e1; font-size: 0.85rem; margin-top: 6px; font-weight: 700;">Model: Kira Noir</div>
+            <div style="color: #ff1475; font-size: 0.8rem; font-weight: 800; margin-top: 8px;">890K views · ★ 98.8% Loves</div>
+          </div>
+        </article>
+
+        <article class="ct-video-card" onclick="switchThemeView('watch')">
+          <div class="ct-card-thumb" style="background: radial-gradient(circle at 20% 70%, #281452 0%, #4a0935 55%, #070d18 100%);"></div>
+          <div style="padding: 1.25rem;">
+            <h3 style="font-size: 1rem; font-weight: 900;">🍭 Backstage Secrets: Giggling Dressing Room Tryouts</h3>
+            <div style="color: #cbd5e1; font-size: 0.85rem; margin-top: 6px; font-weight: 700;">Model: Mia Thorne</div>
+            <div style="color: #ff1475; font-size: 0.8rem; font-weight: 800; margin-top: 8px;">650K views · ★ 97.5% Loves</div>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- VIEW 2: WATCH -->
+    <div id="view-watch" style="display: none;">
+      <div style="display: grid; grid-template-columns: 1fr 360px; gap: 2rem; margin-bottom: 4rem;">
+        <div>
+          <div class="ct-player-frame">
+            <div class="ct-player-inner">
+              <div style="padding: 1.5rem; display: flex; justify-content: space-between;">
+                <span style="background: rgba(0,0,0,0.6); padding: 6px 14px; border-radius: 9999px; font-size: 0.85rem; font-weight: 800; border: 2px solid rgba(255,20,117,0.5);">
+                  COUCHTRYOUTS ORIGINAL · 4K UHD 60FPS
+                </span>
+                <span style="background: var(--ct-gradient-candy); padding: 6px 14px; border-radius: 9999px; font-size: 0.85rem; font-weight: 900;">
+                  100% UNCUT 🎬
+                </span>
+              </div>
+              <div style="text-align: center;">
+                <button class="ct-bubble-btn" style="width: 90px; height: 90px; background: var(--ct-gradient-candy); border-radius: 50%; color: #fff; font-size: 2.5rem; box-shadow: 0 0 45px #ff1475;">
+                  ▶
+                </button>
+              </div>
+              <div style="padding: 1.5rem; background: linear-gradient(180deg, transparent 0%, rgba(9,7,16,0.95) 100%);">
+                <div style="height: 10px; background: rgba(255,255,255,0.2); border-radius: 9999px; position: relative;">
+                  <div style="width: 44%; height: 100%; background: var(--ct-gradient-candy); border-radius: 9999px;"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <h1 style="font-size: 2.2rem; margin-top: 1.5rem;">🔥 Private Couch Audition: Sensual Neon Chemistry (Uncut 4K) ✨</h1>
+        </div>
+
+        <div>
+          <div style="background: #181226; border: 2px solid rgba(255,20,117,0.4); border-radius: 28px; padding: 1.75rem;">
+            <h3 style="font-size: 1.15rem; font-weight: 900; margin-bottom: 1rem;">Scene Specifications 🎬</h3>
+            <p style="padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.1); display: flex; justify-content: space-between;">
+              <span>Resolution:</span> <strong style="color: #06b6d4;">4K UHD 60FPS</strong>
+            </p>
+            <p style="padding: 0.5rem 0; border-bottom: 1px dashed rgba(255,255,255,0.1); display: flex; justify-content: space-between;">
+              <span>Audio:</span> <strong>Dolby Atmos 5.1</strong>
+            </p>
+            <p style="padding: 0.5rem 0; display: flex; justify-content: space-between;">
+              <span>Compliance:</span> <strong style="color: #10b981;">18 U.S.C. 2257 Verified</strong>
             </p>
           </div>
-          <button class="ct-btn-vip" onclick="alert('Subscribed to Sienna Rose!')">Subscribe Free</button>
         </div>
+      </div>
+    </div>
 
-        <div class="ct-model-stats-grid">
-          <div class="ct-stat-box">
-            <div class="ct-stat-number ct-tabular">142</div>
-            <div class="ct-stat-label">Auditions</div>
+    <!-- VIEW 3: MODEL -->
+    <div id="view-model" style="display: none;">
+      <section style="background: #181226; border: 3px solid rgba(255,20,117,0.5); border-radius: 36px; padding: 3rem; margin-bottom: 4rem;">
+        <div style="display: flex; align-items: center; gap: 2rem;">
+          <div style="width: 140px; height: 140px; border-radius: 50%; background: var(--ct-gradient-candy); padding: 4px; box-shadow: 0 0 45px rgba(255,20,117,0.8);">
+            <div style="width: 100%; height: 100%; border-radius: 50%; background: #090710; display: flex; align-items: center; justify-content: center; font-size: 3rem; font-weight: 900;">
+              SR
+            </div>
           </div>
-          <div class="ct-stat-box">
-            <div class="ct-stat-number ct-tabular">48.6M</div>
-            <div class="ct-stat-label">Total Views</div>
-          </div>
-          <div class="ct-stat-box">
-            <div class="ct-stat-number ct-tabular">320K</div>
-            <div class="ct-stat-label">Subscribers</div>
-          </div>
-          <div class="ct-stat-box">
-            <div class="ct-stat-number ct-tabular" style="color: var(--ct-neon-pink);">#3</div>
-            <div class="ct-stat-label">Global Rank</div>
-          </div>
-          <div class="ct-stat-box">
-            <div class="ct-stat-number ct-tabular" style="color: #34d399;">99.4%</div>
-            <div class="ct-stat-label">Approval</div>
+          <div>
+            <h1 style="font-size: 2.8rem;">Sienna Rose 👑</h1>
+            <p style="color: #ff1475; font-weight: 800;">@siennarose · Exclusive Couchtryouts Headliner 💖</p>
+            <p style="margin-top: 0.5rem; color: #cbd5e1; max-width: 600px;">
+              Award-winning performer and exclusive contract lead. Known for intense unscripted chemistry, raw auditions, and midnight premieres.
+            </p>
           </div>
         </div>
       </section>
     </div>
-
   </main>
 
-  <!-- ====================================================================
-       FOOTER & COMPLIANCE SECTION
-       ==================================================================== -->
-  <footer class="ct-footer">
-    <div class="ct-container">
-      <div class="ct-disclaimer-box">
-        <strong>18+ ADULT ENTERTAINMENT COMPLIANCE NOTICE:</strong> This website contains age-restricted adult content intended strictly for consenting adults aged 18 years or older. All models, actors, and other persons depicted in audiovisual content appeared on Couchtryouts were 18 years of age or older at the time of creation pursuant to 18 U.S.C. § 2257.
-      </div>
-
-      <div class="ct-footer-grid">
-        <div>
-          <img src="/public/assets/aistudio/couchtryouts_transparent_d61e44ce.png" alt="Couchtryouts" style="height: 48px;">
-          <p style="margin-top: 1rem; color: #a0aec0; line-height: 1.6;">
-            The premier after-dark network for exclusive casting auditions, verified creator premieres, and high-fidelity 4K 60fps streaming.
-          </p>
-        </div>
-
-        <div>
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 1rem;">Navigation</h4>
-          <p><a href="#home" onclick="switchThemeView('home')">Auditions Feed</a></p>
-          <p><a href="#watch" onclick="switchThemeView('watch')">Watch Studio 4K</a></p>
-          <p><a href="#model" onclick="switchThemeView('model')">Featured Models</a></p>
-        </div>
-
-        <div>
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 1rem;">Legal & Compliance</h4>
-          <p><a href="#2257">18 U.S.C. 2257 Statement</a></p>
-          <p><a href="#dmca">DMCA / Copyright Policy</a></p>
-          <p><a href="#terms">Terms of Service</a></p>
-        </div>
-
-        <div>
-          <h4 style="color: #fff; font-weight: 800; margin-bottom: 1rem;">Safety & Trust</h4>
-          <p>Restricted To Adults (RTA)</p>
-          <p>256-Bit SSL Encrypted</p>
-          <p>24/7 Billing Support</p>
-        </div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- ====================================================================
-       STICKY AD BARS (DISMISSIBLE)
-       ==================================================================== -->
-  <aside class="ct-sticky-desktop-ad" id="ctDesktopAd">
-    <button class="ct-ad-close-btn" onclick="dismissAd('desktop')">✕</button>
+  <!-- STICKY AD -->
+  <aside class="ct-sticky-desktop">
     <div>
-      <div style="font-size: 0.65rem; color: var(--ct-neon-pink); font-weight: 900; letter-spacing: 0.08em; text-transform: uppercase;">
-        SPONSOR // 300x100
-      </div>
-      <div style="font-size: 0.95rem; font-weight: 900; color: #fff; margin: 3px 0;">
-        Live Webcam Auditions
-      </div>
-      <div style="font-size: 0.78rem; color: #cbd5e1;">Private 1-on-1 VIP Video Room</div>
+      <div style="font-size: 0.7rem; font-weight: 900; color: #ff1475;">💋 SPONSOR // 300x100</div>
+      <div style="font-size: 1rem; font-weight: 900; color: #fff;">Live Cam Auditions 💖</div>
     </div>
-    <button class="ct-ad-cta" style="padding: 0.4rem 0.9rem; font-size: 0.78rem;">CONNECT</button>
+    <button class="ct-bubble-btn" style="padding: 0.5rem 1rem; background: var(--ct-gradient-candy); color: #fff; font-weight: 900;">
+      CONNECT
+    </button>
   </aside>
 
-  <aside class="ct-sticky-mobile-ad" id="ctMobileAd">
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <span style="font-size: 0.65rem; color: var(--ct-neon-pink); font-weight: 900;">320x50</span>
-      <span style="font-size: 0.82rem; font-weight: 700; color: #fff;">Unlock Uncut 4K Couch Auditions</span>
-    </div>
-    <div style="display: flex; align-items: center; gap: 8px;">
-      <button class="ct-ad-cta" style="padding: 0.35rem 0.75rem; font-size: 0.75rem;">VIP PASS</button>
-      <button onclick="dismissAd('mobile')" style="color: #cbd5e1; font-size: 1rem; padding: 2px;">✕</button>
-    </div>
-  </aside>
-
-  <!-- ==========================================================================
-       VANILLA INTERACTION LOGIC
-       ========================================================================== -->
   <script>
     function switchThemeView(viewName, tabEl) {
-      const views = {
-        home: document.getElementById('view-home'),
-        watch: document.getElementById('view-watch'),
-        model: document.getElementById('view-model')
-      };
-
-      if (viewName === 'all') {
-        views.home.style.display = 'block';
-        views.watch.style.display = 'block';
-        views.model.style.display = 'block';
-      } else {
-        views.home.style.display = (viewName === 'home') ? 'block' : 'none';
-        views.watch.style.display = (viewName === 'watch') ? 'block' : 'none';
-        views.model.style.display = (viewName === 'model') ? 'block' : 'none';
-      }
-
+      document.getElementById('view-home').style.display = (viewName === 'home') ? 'block' : 'none';
+      document.getElementById('view-watch').style.display = (viewName === 'watch') ? 'block' : 'none';
+      document.getElementById('view-model').style.display = (viewName === 'model') ? 'block' : 'none';
       if (tabEl) {
         document.querySelectorAll('.ct-demo-tab-btn').forEach(btn => btn.classList.remove('active'));
         tabEl.classList.add('active');
       }
       window.scrollTo({ top: 0, behavior: 'smooth' });
-    }
-
-    function toggleMobileDrawer() {
-      const drawer = document.getElementById('ctMobileDrawer');
-      const overlay = document.getElementById('ctDrawerOverlay');
-      drawer.classList.toggle('open');
-      overlay.classList.toggle('open');
-    }
-
-    function dismissAd(type) {
-      if (type === 'desktop') {
-        document.getElementById('ctDesktopAd').classList.add('dismissed');
-      } else if (type === 'mobile') {
-        document.getElementById('ctMobileAd').classList.add('dismissed');
-      }
-    }
-
-    let isPlaying = false;
-    let playInterval;
-    let currentPercent = 42;
-
-    function togglePlayerPlay() {
-      isPlaying = !isPlaying;
-      const playSvg = document.getElementById('ctPlaySvg');
-      if (isPlaying) {
-        playSvg.innerHTML = '<path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z"/>';
-        playInterval = setInterval(() => {
-          currentPercent = (currentPercent + 0.4) % 100;
-          document.getElementById('ctPlayerProgress').style.width = currentPercent + '%';
-        }, 350);
-      } else {
-        playSvg.innerHTML = '<path d="M8 5v14l11-7z"/>';
-        clearInterval(playInterval);
-      }
-    }
-
-    function scrubVideo(event) {
-      const scrubber = event.currentTarget;
-      const rect = scrubber.getBoundingClientRect();
-      const clickX = event.clientX - rect.left;
-      currentPercent = Math.max(0, Math.min(100, (clickX / rect.width) * 100));
-      document.getElementById('ctPlayerProgress').style.width = currentPercent + '%';
     }
   </script>
 </body>
